@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Motor 2W Testing" parallel="tests" thread-count="5">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<!--<listener class-name="Listeners.CustomListeners" />-->
+	</listeners>
+	<test name="New Vehicle Test" parallel="classes" thread-count="2">
+		<classes>
+			<class name="com.twowheeler.testscenario.New_Org" />
+		</classes>
+	</test>
+	<test name=" Test">
+		<classes>
+			<class name="com.twowheeler.base.TestBaseNewOrg" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

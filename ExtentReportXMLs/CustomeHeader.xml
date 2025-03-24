@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <configuration>
+ 
+    <!-- report theme -->
+    <!-- STANDARD, DARK -->
+    <theme>DARK</theme>
+ 
+    <!-- document encoding -->
+    <!-- defaults to UTF-8 -->
+    <encoding>UTF-8</encoding>
+ 
+    <!-- protocol for script and stylesheets -->
+    <!-- defaults to https -->
+    <!-- HTTP, HTTPS -->
+    <protocol>HTTPS</protocol>
+ 
+    <!-- offline report -->
+    <timelineEnabled>true</timelineEnabled>
+    
+    <!-- offline report -->
+    <enableOfflineMode>false</enableOfflineMode>
+    
+    <!-- use thumbnails for base64 images -->
+    <!-- this may slowdown viewing tests -->
+    <thumbnailForBase64>true</thumbnailForBase64>
+ 
+    <!-- title of the document -->
+    <documentTitle>Private Car UAT Automation Reports</documentTitle>
+ 
+    <!-- report name - displayed at top-nav -->
+    <reportName>
+    <!-- Logo Path -->
+    <scripts>
+      <![CDATA[
+       <img src='D:\automation\RR\2w-motor-test-automation\src\test\resources\TestData\Logo\Logo.png'/>
+      ]]>
+    </scripts>
+    </reportName>
+    <!-- timestamp format -->
+    <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+    <!-- custom styles -->
+    <styles>
+      <![CDATA[
+      
+      ]]>
+    </styles>
+ 
+  </configuration>

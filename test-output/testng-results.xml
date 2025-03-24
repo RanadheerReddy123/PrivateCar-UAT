@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-30T17:04:38 IST" name="Default suite" finished-at="2024-12-30T17:20:41 IST" duration-ms="962673">
+    <groups>
+    </groups>
+    <test started-at="2024-12-30T17:04:38 IST" name="Default test" finished-at="2024-12-30T17:20:41 IST" duration-ms="962673">
+      <class name="com.twowheeler.base.TestBase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.twowheeler.base.TestBase@6b9c69a9]" started-at="2024-12-30T17:03:29 IST" name="setup" finished-at="2024-12-30T17:04:38 IST" duration-ms="69332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.twowheeler.base.TestBase@6b9c69a9]" started-at="2024-12-30T17:20:41 IST" name="tearDown" finished-at="2024-12-30T17:21:09 IST" duration-ms="27760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.twowheeler.base.TestBase -->
+      <class name="com.twowheeler.testscenario.New_Business">
+        <test-method is-config="true" signature="setReport()[pri:0, instance:com.twowheeler.testscenario.New_Business@4c060c8f]" started-at="2024-12-30T17:04:38 IST" name="setReport" finished-at="2024-12-30T17:04:40 IST" duration-ms="1624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setReport -->
+        <test-method signature="RegisteredCar(java.util.Hashtable,java.lang.reflect.Method)[pri:0, instance:com.twowheeler.testscenario.New_Business@4c060c8f]" started-at="2024-12-30T17:04:40 IST" name="RegisteredCar" data-provider="dp" finished-at="2024-12-30T17:12:50 IST" duration-ms="490179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Test Case=Isuue Policy with Registred Vechile with Comprehensive Coverage, Vechcle Reg=JTQ3719, Quote Status=Issued, PH ID=990803015587, Gross Premium=MYR 306.84, Total Payable Premium=MYR 341.40, Expected Result=Policy is Issued Successfully, Stamp Duty=MYR 10.00, SST=MYR 24.55, Inception Date=31-12-2024, Vehicle Sum Insured=MYR 7810.00, Coverage Type=Comprehensive, Runmode=Y, NCD=MYR 0.00, Quote Number=1000087032, Place Of Use=Johor, Actual Result=Policy is Issued Successfully, Status=Pass, Act Premium=MYR 185.02, Scenario=Registred Vechile, Expected Premium=MYR 341.40, Extra Benefits Total=MYR 0.00, Rebate=MYR 0.00, Name As Per ID=Bala Bala, Premium after NCD=MYR 306.84, Expiry Date=30-12-2025, Basic Premium=MYR 306.84, Driving Experience=2 - 5 years, Policy Number=Policy #00000402000035247, Sno=1.0}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.twowheeler.testscenario.New_Business.RegisteredCar(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredCar -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.twowheeler.testscenario.New_Business@4c060c8f]" started-at="2024-12-30T17:12:50 IST" name="tearDown" finished-at="2024-12-30T17:12:50 IST" duration-ms="34" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisteredCar status=SUCCESS method=New_Business.RegisteredCar(java.util.Hashtable,java.lang.reflect.Method)[pri:0, instance:com.twowheeler.testscenario.New_Business@4c060c8f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="RegisteredCar(java.util.Hashtable,java.lang.reflect.Method)[pri:0, instance:com.twowheeler.testscenario.New_Business@4c060c8f]" started-at="2024-12-30T17:12:50 IST" name="RegisteredCar" data-provider="dp" finished-at="2024-12-30T17:20:40 IST" duration-ms="469669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Test Case=Isuue Policy with Registred Vechile with Third Party Coverage, Vechcle Reg=JTQ3719, Quote Status=Issued, PH ID=990803015587, Gross Premium=MYR 101.40, Total Payable Premium=MYR 119.50, Expected Result=Policy is Issued Successfully, Stamp Duty=MYR 10.00, SST=MYR 8.11, Inception Date=, Vehicle Sum Insured=MYR 6500.00, Coverage Type=Third Party, Runmode=Y, NCD=MYR 0.00, Quote Number=1000022735, Place Of Use=Johor, Actual Result=Policy is Issued Successfully, Status=, Act Premium=MYR 100.18, Scenario=Registred Vechile, Expected Premium=MYR 119.50, Extra Benefits Total=MYR 0.00, Rebate=MYR 0.00, Name As Per ID=Bala Bala, Premium after NCD=MYR 101.40, Expiry Date=, Basic Premium=MYR 101.40, Driving Experience=2 - 5 years, Policy Number=Policy #00000402000039116, Sno=2.0}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.twowheeler.testscenario.New_Business.RegisteredCar(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredCar -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.twowheeler.testscenario.New_Business@4c060c8f]" started-at="2024-12-30T17:20:40 IST" name="tearDown" finished-at="2024-12-30T17:20:40 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisteredCar status=SUCCESS method=New_Business.RegisteredCar(java.util.Hashtable,java.lang.reflect.Method)[pri:0, instance:com.twowheeler.testscenario.New_Business@4c060c8f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.twowheeler.testscenario.New_Business@4c060c8f]" started-at="2024-12-30T17:20:40 IST" name="endReport" finished-at="2024-12-30T17:20:41 IST" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.twowheeler.testscenario.New_Business -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
