@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Registered Vehicle Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/9</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/11</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 16 17:11:43 IST 2025</td>
+<td>Started on:</td><td>Tue Apr 01 22:08:37 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>1215 seconds (1215066 ms)</td>
+<tr><td>Total time:</td><td>262 seconds (262756 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.twowheeler.testscenario.Reg_Business.tearDown()'><b>tearDown</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: [TestResult name=PCRV status=FAILURE method=Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method)[pri:0, instance:com.twowheeler.testscenario.Reg_Business@585c13de] output={null}]</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+<td title='com.twowheeler.testscenario.Reg_Business.tearDown()'><b>tearDown</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: [TestResult name=PCRV status=FAILURE method=Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method)[pri:0, instance:com.twowheeler.testscenario.Reg_Business@58065f0c] output={null}]</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -97,22 +95,20 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace824218940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace824218940'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1788327894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1788327894'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -127,7 +123,7 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -151,7 +147,7 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -162,35 +158,60 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=Policy #-, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 239.96, Place Of Use=Kedah, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 144.69, Quote Status=Issued, Premium after NCD - Expected=MYR 239.96, Sno=3.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 319.95, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=MYR 1,000.15, NCD=MYR 750.12, Premium after NCD - Result=, Rebate2=NA, SST=MYR 73.34, PH ID=951126115254, Extra Benefits Total=MYR 0.00, Vehicle Sum Insured - Expected=MYR 6732.00, NCD - Expected=Error, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=MYR 244.89, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=1000028348, Runmode=Y, Gross Premium=MYR 916.81, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=20-04-2026, Inception Date=21-04-2025, Rebate=MYR 0.00, Test Case=Issue Policy with Registered Vehicle with Comprehensive Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=6 - 10 years, Vechcle Reg=VGA6536, PVR=, Premium after NCD=MYR 916.81, Stamp Duty=Policy is Issued Successfully, Vehicle Sum Insured=MYR 44166.00, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=MYR 1,666.93, Expected Premium=MYR 269.16, Agreed Value=2.0, Coverage Type=Comprehensive, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 19.20, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: /html/body/div[5]/div[2]/div/mat-dialog-container/dx-alert/mat-dialog-actions/div/dx-button[2]/button
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=Policy #00000402000070128, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 272.16, Place Of Use=Kedah, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 164.12, Quote Status=Issued, Premium after NCD - Expected=MYR 272.16, Sno=1.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 272.16, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=MYR 991.61, NCD=MYR 302.97, Premium after NCD - Result=, Rebate2=1.0, SST=MYR 72.71, PH ID=561104035372, Extra Benefits Total=MYR 0.00, Vehicle Sum Insured - Expected=MYR 6161.00, NCD - Expected=Fail, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=MYR 319.44, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=1000073464, Runmode=Y, Gross Premium=MYR 908.90, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=19-03-2026, Inception Date=20-03-2025, Rebate=MYR 0.00, Test Case=Issue Policy with Registered Vehicle with Comprehensive Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=2 - 5 years, Vechcle Reg=BKD9360, PVR=, Premium after NCD=MYR 908.90, Stamp Duty=MYR 10.00, Vehicle Sum Insured=MYR 30199.00, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=MYR 1,211.87, Expected Premium=MYR 303.93, Agreed Value=1.0, Coverage Type=Comprehensive, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 21.77, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.178)
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, findElement {value=/html/body/div[5]/div[2]/div/mat-dialog-container/dx-alert/mat-dialog-actions/div/dx-button[2]/button, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 	at com.twowheeler.base.TestBase.click(TestBase.java:148)
-	at com.twowheeler.testscenario.Reg_Business.PCRV(Reg_Business.java:467)
+	at com.twowheeler.testscenario.Reg_Business.PCRV(Reg_Business.java:455)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1221875160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1221875160'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: /html/body/div[5]/div[2]/div/mat-dialog-container/dx-alert/mat-dialog-actions/div/dx-button[2]/button
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1804296593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1804296593'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.178)
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, findElement {value=/html/body/div[5]/div[2]/div/mat-dialog-container/dx-alert/mat-dialog-actions/div/dx-button[2]/button, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 	at com.twowheeler.base.TestBase.click(TestBase.java:148)
-	at com.twowheeler.testscenario.Reg_Business.PCRV(Reg_Business.java:467)
+	at com.twowheeler.testscenario.Reg_Business.PCRV(Reg_Business.java:455)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -208,27 +229,8 @@ Driver info: driver.version: RemoteWebDriver
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>269</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=Policy #-, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 101.40, Place Of Use=Kedah, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 100.18, Quote Status=Validated, Premium after NCD - Expected=MYR 101.40, Sno=2.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 101.40, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=MYR 514.98, NCD=MYR 571.46, Premium after NCD - Result=, Rebate2=NA, SST=MYR 37.41, PH ID=951126115254, Extra Benefits Total=MYR 0.00, Vehicle Sum Insured - Expected=MYR 0.00, NCD - Expected=Fail, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=MYR 181.38, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=1000094383, Runmode=Y, Gross Premium=MYR 467.57, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=20-04-2026, Inception Date=21-04-2025, Rebate=MYR 0.00, Test Case=Issue Policy with Registered Vehicle with Third Party Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=2 - 5 years, Vechcle Reg=VGA6536, PVR=, Premium after NCD=MYR 467.57, Stamp Duty=MYR 10.00, Vehicle Sum Insured=MYR 23700.00, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=MYR 1,039.03, Expected Premium=MYR 119.51, Agreed Value=1.0, Coverage Type=TP, Fire & Theft, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 8.11, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td></td>
-<td>438</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
-<tr>
-<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=Policy #00000402000070128, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 272.16, Place Of Use=Kedah, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 164.12, Quote Status=Issued, Premium after NCD - Expected=MYR 272.16, Sno=1.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 272.16, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=MYR 991.61, NCD=MYR 302.97, Premium after NCD - Result=, Rebate2=1.0, SST=MYR 72.71, PH ID=951126115254, Extra Benefits Total=MYR 0.00, Vehicle Sum Insured - Expected=MYR 6161.00, NCD - Expected=Fail, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=MYR 319.44, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=1000073464, Runmode=Y, Gross Premium=MYR 908.90, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=19-03-2026, Inception Date=20-03-2025, Rebate=MYR 0.00, Test Case=Issue Policy with Registered Vehicle with Comprehensive Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=2 - 5 years, Vechcle Reg=VGA6536, PVR=, Premium after NCD=MYR 908.90, Stamp Duty=MYR 10.00, Vehicle Sum Insured=MYR 30199.00, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=MYR 1,211.87, Expected Premium=MYR 303.93, Agreed Value=1.0, Coverage Type=Comprehensive, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 21.77, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td></td>
-<td>504</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
+<td>262</td>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -239,16 +241,14 @@ Driver info: driver.version: RemoteWebDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 76.05, Place Of Use=Kedah, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 75.14, Quote Status=, Premium after NCD - Expected=MYR 76.05, Sno=4.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 101.40, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=NA, SST=, PH ID=951126115254, Extra Benefits Total=, Vehicle Sum Insured - Expected=MYR 0.00, NCD - Expected=MYR 25.35, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=, Runmode=Y, Gross Premium=, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=01-05-2026, Inception Date=02-05-2025, Rebate=, Test Case=Issue Policy with Registered Vehicle with Third Party Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=6 - 10 years, Vechcle Reg=VGA6536, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=, Expected Premium=MYR 92.13, Agreed Value=2.0, Coverage Type=TP, Fire & Theft, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 6.08, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=, Place Of Use=, Rebate - Expected=, Extra Benefits Total - Result=, PC=, Act Premium - Expected=, Quote Status=, Premium after NCD - Expected=, Sno=, Name As Per ID=, Basic Premium - Expected=, PC2=, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=, SST=, PH ID=, Extra Benefits Total=, Vehicle Sum Insured - Expected=, NCD - Expected=, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=, Safety Features=, Vehicle Sum Insured - Result=, Actual Result=, Quote Number=, Runmode=, Gross Premium=, Anti Theft=, Expiry Date=, Inception Date=, Rebate=, Test Case=, Garage Type=, Expected Result=, Driving Experience=, Vechcle Reg=, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=, Place Of Use2=, Basic Premium=, Expected Premium=, Agreed Value=, Coverage Type=, Scenario=, Stamp Duty - Expected=, SST - Expected=, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -260,22 +260,20 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1523870288", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1523870288'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1923833386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1923833386'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -290,7 +288,7 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -314,18 +312,16 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
 <tr>
-<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 86.19, Place Of Use=Melaka, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 85.16, Quote Status=, Premium after NCD - Expected=MYR 86.19, Sno=6.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 101.40, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=NA, SST=, PH ID=951126115254, Extra Benefits Total=, Vehicle Sum Insured - Expected=MYR 0.00, NCD - Expected=MYR 15.21, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=, Runmode=Y, Gross Premium=, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=29-03-2026, Inception Date=30-03-2025, Rebate=, Test Case=Issue Policy with Registered Vehicle with Third Party Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=2 - 5 years, Vechcle Reg=VGA6536, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=, Expected Premium=MYR 103.09, Agreed Value=1.0, Coverage Type=TP, Fire & Theft, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 6.90, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=, Place Of Use=, Rebate - Expected=, Extra Benefits Total - Result=, PC=, Act Premium - Expected=, Quote Status=, Premium after NCD - Expected=, Sno=, Name As Per ID=, Basic Premium - Expected=, PC2=, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=, SST=, PH ID=, Extra Benefits Total=, Vehicle Sum Insured - Expected=, NCD - Expected=, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=, Safety Features=, Vehicle Sum Insured - Result=, Actual Result=, Quote Number=, Runmode=, Gross Premium=, Anti Theft=, Expiry Date=, Inception Date=, Rebate=, Test Case=, Garage Type=, Expected Result=, Driving Experience=, Vechcle Reg=, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=, Place Of Use2=, Basic Premium=, Expected Premium=, Agreed Value=, Coverage Type=, Scenario=, Stamp Duty - Expected=, SST - Expected=, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -337,22 +333,20 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1830119554", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1830119554'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace74783846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace74783846'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -367,7 +361,7 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -391,18 +385,16 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
 <tr>
-<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 245.21, Place Of Use=Labuan, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 147.86, Quote Status=, Premium after NCD - Expected=MYR 245.21, Sno=11.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 288.48, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=NA, SST=, PH ID=951126115254, Extra Benefits Total=, Vehicle Sum Insured - Expected=MYR 6996.00, NCD - Expected=MYR 43.27, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=, Runmode=Y, Gross Premium=, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=, Inception Date=, Rebate=, Test Case=Issue Policy with Registered Vehicle with Comprehensive Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=6 - 10 years, Vechcle Reg=VGA6536, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=, Expected Premium=MYR 274.83, Agreed Value=2.0, Coverage Type=Comprehensive, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 19.62, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=Policy #-, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 101.40, Place Of Use=Kedah, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 100.18, Quote Status=Validated, Premium after NCD - Expected=MYR 101.40, Sno=2.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 101.40, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=MYR 514.98, NCD=MYR 571.46, Premium after NCD - Result=, Rebate2=NA, SST=MYR 37.41, PH ID=561104035372, Extra Benefits Total=MYR 0.00, Vehicle Sum Insured - Expected=MYR 0.00, NCD - Expected=Fail, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=MYR 181.38, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=1000094383, Runmode=Y, Gross Premium=MYR 467.57, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=16-05-2026, Inception Date=17-05-2025, Rebate=MYR 0.00, Test Case=Issue Policy with Registered Vehicle with Third Party Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=2 - 5 years, Vechcle Reg=BKD9360, PVR=, Premium after NCD=MYR 467.57, Stamp Duty=MYR 10.00, Vehicle Sum Insured=MYR 23700.00, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=MYR 1,039.03, Expected Premium=MYR 119.51, Agreed Value=1.0, Coverage Type=TP, Fire & Theft, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 8.11, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -414,22 +406,20 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace601176892", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace601176892'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2026132338", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2026132338'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -444,7 +434,7 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -468,18 +458,16 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
 <tr>
-<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 76.05, Place Of Use=Melaka, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 75.14, Quote Status=, Premium after NCD - Expected=MYR 76.05, Sno=8.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 101.40, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=NA, SST=, PH ID=951126115254, Extra Benefits Total=, Vehicle Sum Insured - Expected=MYR 0.00, NCD - Expected=MYR 25.35, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=, Runmode=Y, Gross Premium=, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=, Inception Date=, Rebate=, Test Case=Issue Policy with Registered Vehicle with Third Party Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=6 - 10 years, Vechcle Reg=VGA6536, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=, Expected Premium=MYR 92.13, Agreed Value=2.0, Coverage Type=TP, Fire & Theft, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 6.08, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=, Place Of Use=, Rebate - Expected=, Extra Benefits Total - Result=, PC=, Act Premium - Expected=, Quote Status=, Premium after NCD - Expected=, Sno=, Name As Per ID=, Basic Premium - Expected=, PC2=, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=, SST=, PH ID=, Extra Benefits Total=, Vehicle Sum Insured - Expected=, NCD - Expected=, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=, Safety Features=, Vehicle Sum Insured - Result=, Actual Result=, Quote Number=, Runmode=, Gross Premium=, Anti Theft=, Expiry Date=, Inception Date=, Rebate=, Test Case=, Garage Type=, Expected Result=, Driving Experience=, Vechcle Reg=, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=, Place Of Use2=, Basic Premium=, Expected Premium=, Agreed Value=, Coverage Type=, Scenario=, Stamp Duty - Expected=, SST - Expected=, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -491,22 +479,20 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace253299907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace253299907'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace295534907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace295534907'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -521,7 +507,7 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -545,18 +531,16 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
 <tr>
-<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 212.88, Place Of Use=Kedah, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 128.37, Quote Status=, Premium after NCD - Expected=MYR 212.88, Sno=9.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 212.88, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=NA, SST=, PH ID=951126115254, Extra Benefits Total=, Vehicle Sum Insured - Expected=MYR 6405.00, NCD - Expected=MYR 0.00, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=, Runmode=Y, Gross Premium=, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=, Inception Date=, Rebate=, Test Case=Issue Policy with Registered Vehicle with Comprehensive Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=2 - 5 years, Vechcle Reg=VGA6536, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=, Expected Premium=MYR 239.91, Agreed Value=1.0, Coverage Type=Comprehensive, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 17.03, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=, Place Of Use=, Rebate - Expected=, Extra Benefits Total - Result=, PC=, Act Premium - Expected=, Quote Status=, Premium after NCD - Expected=, Sno=, Name As Per ID=, Basic Premium - Expected=, PC2=, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=, SST=, PH ID=, Extra Benefits Total=, Vehicle Sum Insured - Expected=, NCD - Expected=, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=, Safety Features=, Vehicle Sum Insured - Result=, Actual Result=, Quote Number=, Runmode=, Gross Premium=, Anti Theft=, Expiry Date=, Inception Date=, Rebate=, Test Case=, Garage Type=, Expected Result=, Driving Experience=, Vechcle Reg=, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=, Place Of Use2=, Basic Premium=, Expected Premium=, Agreed Value=, Coverage Type=, Scenario=, Stamp Duty - Expected=, SST - Expected=, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -568,22 +552,20 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace238252968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace238252968'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace60388431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace60388431'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -598,7 +580,7 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -622,18 +604,16 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
 <tr>
-<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 45.80, Place Of Use=Kedah, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 45.25, Quote Status=, Premium after NCD - Expected=MYR 45.80, Sno=10.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 45.80, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=NA, SST=, PH ID=951126115254, Extra Benefits Total=, Vehicle Sum Insured - Expected=MYR 0.00, NCD - Expected=MYR 0.00, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=, Runmode=Y, Gross Premium=, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=, Inception Date=, Rebate=, Test Case=Issue Policy with Registered Vehicle with Third Party Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=2 - 5 years, Vechcle Reg=VGA6536, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=, Expected Premium=MYR 59.46, Agreed Value=1.0, Coverage Type=TP, Fire & Theft, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 3.66, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=, Place Of Use=, Rebate - Expected=, Extra Benefits Total - Result=, PC=, Act Premium - Expected=, Quote Status=, Premium after NCD - Expected=, Sno=, Name As Per ID=, Basic Premium - Expected=, PC2=, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=, SST=, PH ID=, Extra Benefits Total=, Vehicle Sum Insured - Expected=, NCD - Expected=, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=, Safety Features=, Vehicle Sum Insured - Result=, Actual Result=, Quote Number=, Runmode=, Gross Premium=, Anti Theft=, Expiry Date=, Inception Date=, Rebate=, Test Case=, Garage Type=, Expected Result=, Driving Experience=, Vechcle Reg=, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=, Place Of Use2=, Basic Premium=, Expected Premium=, Agreed Value=, Coverage Type=, Scenario=, Stamp Duty - Expected=, SST - Expected=, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -645,22 +625,20 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1901927697", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1901927697'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace727223729", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace727223729'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -675,7 +653,7 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -699,18 +677,16 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
 <tr>
-<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 86.19, Place Of Use=Melaka, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 85.16, Quote Status=, Premium after NCD - Expected=MYR 86.19, Sno=12.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 101.40, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=NA, SST=, PH ID=951126115254, Extra Benefits Total=, Vehicle Sum Insured - Expected=MYR 0.00, NCD - Expected=MYR 15.21, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=, Runmode=Y, Gross Premium=, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=, Inception Date=, Rebate=, Test Case=Issue Policy with Registered Vehicle with Third Party Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=6 - 10 years, Vechcle Reg=VGA6536, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=, Expected Premium=MYR 103.09, Agreed Value=2.0, Coverage Type=TP, Fire & Theft, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 6.90, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=, Place Of Use=, Rebate - Expected=, Extra Benefits Total - Result=, PC=, Act Premium - Expected=, Quote Status=, Premium after NCD - Expected=, Sno=, Name As Per ID=, Basic Premium - Expected=, PC2=, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=, SST=, PH ID=, Extra Benefits Total=, Vehicle Sum Insured - Expected=, NCD - Expected=, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=, Safety Features=, Vehicle Sum Insured - Result=, Actual Result=, Quote Number=, Runmode=, Gross Premium=, Anti Theft=, Expiry Date=, Inception Date=, Rebate=, Test Case=, Garage Type=, Expected Result=, Driving Experience=, Vechcle Reg=, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=, Place Of Use2=, Basic Premium=, Expected Premium=, Agreed Value=, Coverage Type=, Scenario=, Stamp Duty - Expected=, SST - Expected=, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -722,22 +698,20 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace654433709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace654433709'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace182683000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace182683000'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -752,7 +726,7 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -776,18 +750,16 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
 <tr>
-<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 271.96, Place Of Use=Labuan, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 163.99, Quote Status=, Premium after NCD - Expected=MYR 271.96, Sno=5.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 319.95, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=NA, SST=, PH ID=951126115254, Extra Benefits Total=, Vehicle Sum Insured - Expected=MYR 6798.00, NCD - Expected=MYR 47.99, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=, Runmode=Y, Gross Premium=, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=, Inception Date=, Rebate=, Test Case=Issue Policy with Registered Vehicle with Comprehensive Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=2 - 5 years, Vechcle Reg=VGA6536, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=, Expected Premium=MYR 303.72, Agreed Value=1.0, Coverage Type=Comprehensive, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 21.76, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=, Place Of Use=, Rebate - Expected=, Extra Benefits Total - Result=, PC=, Act Premium - Expected=, Quote Status=, Premium after NCD - Expected=, Sno=, Name As Per ID=, Basic Premium - Expected=, PC2=, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=, SST=, PH ID=, Extra Benefits Total=, Vehicle Sum Insured - Expected=, NCD - Expected=, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=, Safety Features=, Vehicle Sum Insured - Result=, Actual Result=, Quote Number=, Runmode=, Gross Premium=, Anti Theft=, Expiry Date=, Inception Date=, Rebate=, Test Case=, Garage Type=, Expected Result=, Driving Experience=, Vechcle Reg=, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=, Place Of Use2=, Basic Premium=, Expected Premium=, Agreed Value=, Coverage Type=, Scenario=, Stamp Duty - Expected=, SST - Expected=, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -799,22 +771,20 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace235165098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace235165098'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1225399206", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1225399206'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -829,7 +799,7 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -853,18 +823,16 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
 <tr>
-<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=MYR 214.83, Place Of Use=Labuan, Rebate - Expected=MYR 0.00, Extra Benefits Total - Result=, PC=81100.0, Act Premium - Expected=MYR 129.55, Quote Status=, Premium after NCD - Expected=MYR 214.83, Sno=7.0, Name As Per ID=Ranadheer K, Basic Premium - Expected=MYR 286.44, PC2=Desa Harmoni, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=NA, SST=, PH ID=951126115254, Extra Benefits Total=, Vehicle Sum Insured - Expected=MYR 6864.00, NCD - Expected=MYR 71.61, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=1.0, Safety Features=ABS & Airbags 1, Vehicle Sum Insured - Result=, Actual Result=Policy is Issued Successfully, Quote Number=, Runmode=Y, Gross Premium=, Anti Theft=Others(WITH MECHANICAL DEVICE), Expiry Date=, Inception Date=, Rebate=, Test Case=Issue Policy with Registered Vehicle with Comprehensive Coverage, Garage Type=Locked Compound, Expected Result=Policy is Issued Successfully, Driving Experience=6 - 10 years, Vechcle Reg=VGA6536, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=MYR 0.00, Place Of Use2=Johor, Basic Premium=, Expected Premium=MYR 242.02, Agreed Value=2.0, Coverage Type=Comprehensive, Scenario=Registered Vehicle, Stamp Duty - Expected=MYR 10.00, SST - Expected=MYR 17.19, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=, Place Of Use=, Rebate - Expected=, Extra Benefits Total - Result=, PC=, Act Premium - Expected=, Quote Status=, Premium after NCD - Expected=, Sno=, Name As Per ID=, Basic Premium - Expected=, PC2=, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=, SST=, PH ID=, Extra Benefits Total=, Vehicle Sum Insured - Expected=, NCD - Expected=, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=, Safety Features=, Vehicle Sum Insured - Result=, Actual Result=, Quote Number=, Runmode=, Gross Premium=, Anti Theft=, Expiry Date=, Inception Date=, Rebate=, Test Case=, Garage Type=, Expected Result=, Driving Experience=, Vechcle Reg=, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=, Place Of Use2=, Basic Premium=, Expected Premium=, Agreed Value=, Coverage Type=, Scenario=, Stamp Duty - Expected=, SST - Expected=, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -876,22 +844,20 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1729996179", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1729996179'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=134.0.6998.89)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1034363498", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1034363498'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefc9a47e50f7a7adc82c62a545586d2, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefc9a47e50f7a7adc82c62a545586d2
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -906,7 +872,7 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
 	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
-	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:481)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -930,7 +896,153 @@ Session ID: cefc9a47e50f7a7adc82c62a545586d2
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>com.twowheeler.testscenario.Reg_Business@585c13de</td></tr>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
+<tr>
+<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=, Place Of Use=, Rebate - Expected=, Extra Benefits Total - Result=, PC=, Act Premium - Expected=, Quote Status=, Premium after NCD - Expected=, Sno=, Name As Per ID=, Basic Premium - Expected=, PC2=, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=, SST=, PH ID=, Extra Benefits Total=, Vehicle Sum Insured - Expected=, NCD - Expected=, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=, Safety Features=, Vehicle Sum Insured - Result=, Actual Result=, Quote Number=, Runmode=, Gross Premium=, Anti Theft=, Expiry Date=, Inception Date=, Rebate=, Test Case=, Garage Type=, Expected Result=, Driving Experience=, Vechcle Reg=, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=, Place Of Use2=, Basic Premium=, Expected Premium=, Agreed Value=, Coverage Type=, Scenario=, Stamp Duty - Expected=, SST - Expected=, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
+	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace260893555", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace260893555'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
+	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
+<tr>
+<td title='com.twowheeler.testscenario.Reg_Business.PCRV()'><b>PCRV</b><br>Test class: com.twowheeler.testscenario.Reg_Business<br>Parameters: {Gross Premium - Result=, Policy Number=, Status=, Basic Premium - Result=, Gross Premium - Expected=, Place Of Use=, Rebate - Expected=, Extra Benefits Total - Result=, PC=, Act Premium - Expected=, Quote Status=, Premium after NCD - Expected=, Sno=, Name As Per ID=, Basic Premium - Expected=, PC2=, Stamp Duty - Result=, Total Payable Premium=, NCD=, Premium after NCD - Result=, Rebate2=, SST=, PH ID=, Extra Benefits Total=, Vehicle Sum Insured - Expected=, NCD - Expected=, SST - Result=, Rebate - Result=, NCD - Result=, Act Premium=, Value=, Safety Features=, Vehicle Sum Insured - Result=, Actual Result=, Quote Number=, Runmode=, Gross Premium=, Anti Theft=, Expiry Date=, Inception Date=, Rebate=, Test Case=, Garage Type=, Expected Result=, Driving Experience=, Vechcle Reg=, PVR=, Premium after NCD=, Stamp Duty=, Vehicle Sum Insured=, Extra Benefits Total - Expected=, Place Of Use2=, Basic Premium=, Expected Premium=, Agreed Value=, Coverage Type=, Scenario=, Stamp Duty - Expected=, SST - Expected=, Act Premium - Result=}, public void com.twowheeler.testscenario.Reg_Business.PCRV(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
+	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace807205955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace807205955'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef99ff008f767c3a0e0f90f3bb44fd85, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef99ff008f767c3a0e0f90f3bb44fd85
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
+	at com.twowheeler.utilities.TestUtil.captureScreenshot(TestUtil.java:24)
+	at com.twowheeler.testscenario.Reg_Business.tearDown(Reg_Business.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.twowheeler.testscenario.Reg_Business@58065f0c</td></tr>
 </table><p>
 </body>
 </html>

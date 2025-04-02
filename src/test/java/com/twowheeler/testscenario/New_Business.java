@@ -39,6 +39,8 @@ import com.twowheeler.utilities.MonitoringMail;
 import com.twowheeler.utilities.TestConfig;
 import com.twowheeler.utilities.TestUtil;
 
+import Utilities_UAT_ScreenRecord.Motor_PersonBP_ScreenRecord;
+
 public class New_Business extends TestBaseNew {
 
 	public ExtentSparkReporter htmlReporter;
@@ -69,7 +71,9 @@ public class New_Business extends TestBaseNew {
 	}
 
 	@Test(dataProviderClass = TestUtil.class, dataProvider = "dp", alwaysRun = true)
-	public void NewVehicle(Hashtable<String, String> data, Method m) throws InterruptedException {
+	public void NewVehicle(Hashtable<String, String> data, Method m) throws Exception {
+		// ScreenRecord Start
+				Motor_PersonBP_ScreenRecord.startRecord("PersonBP");
 		try {
 			test = extent.createTest("Private Car Test");
 			if (data.get("Runmode").equalsIgnoreCase("N")) {
@@ -491,6 +495,8 @@ public class New_Business extends TestBaseNew {
 			element.click();
 			click("leave_XPATH");
 		}
+		// ScreenRecord Stop
+				Motor_PersonBP_ScreenRecord.stopRecord();
 	}
 
 	@AfterMethod(alwaysRun = true)
