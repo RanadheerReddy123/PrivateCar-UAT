@@ -13,6 +13,8 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 import javax.mail.MessagingException;
@@ -63,11 +65,19 @@ public class TestBaseNew {
 		  }
 		  if(baseconf.getProperty("browser").equalsIgnoreCase("ch")) {
 			  WebDriverManager.chromedriver().setup();
-			  //ChromeOptions options = new ChromeOptions();
-		        //options.addArguments("--disable-gpu");
-		        //options.addArguments("--no-sandbox");
-				//driver = new ChromeDriver(options);
-				driver = new ChromeDriver();
+			// Create a path for Downloads folder inside your project
+		        String downloadFilepath = System.getProperty("user.dir") + File.separator +  "QuoteLetter";
+
+		        // Set Chrome preferences
+		        Map<String, Object> prefs = new HashMap<>();
+		        prefs.put("download.default_directory", downloadFilepath); // Set your custom download path
+		        prefs.put("plugins.always_open_pdf_externally", true);     // Disable PDF viewer in Chrome
+
+		        ChromeOptions options = new ChromeOptions();
+		        options.setExperimentalOption("prefs", prefs);
+
+		        // Launch Chrome with options
+				driver = new ChromeDriver(options);
 				driver.manage().window().maximize();
 				driver.get(baseconf.getProperty("testurl"));
 				System.out.println("URL opened successfully");

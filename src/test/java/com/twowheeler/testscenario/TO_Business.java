@@ -68,7 +68,7 @@ public class TO_Business extends TestBase {
 	}
 
 	@Test(dataProviderClass = TestUtil.class, dataProvider = "dp", alwaysRun = true)
-	public void PCRV(Hashtable<String, String> data, Method m) throws Exception {
+	public void PCTO(Hashtable<String, String> data, Method m) throws Exception {
 		// ScreenRecord Start
 				Motor_PersonBP_ScreenRecord.startRecord("PersonBP");
 		try {
