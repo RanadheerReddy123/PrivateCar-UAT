@@ -73,7 +73,7 @@ public class New_Business extends TestBaseNew {
 	@Test(dataProviderClass = TestUtil.class, dataProvider = "dp", alwaysRun = true)
 	public void NewVehicle(Hashtable<String, String> data, Method m) throws Exception {
 		// ScreenRecord Start
-				Motor_PersonBP_ScreenRecord.startRecord("PersonBP");
+		Motor_PersonBP_ScreenRecord.startRecord("PersonBP");
 		try {
 			test = extent.createTest("Private Car Test");
 			if (data.get("Runmode").equalsIgnoreCase("N")) {
@@ -314,159 +314,172 @@ public class New_Business extends TestBaseNew {
 			output("The Issue Cover is clicked successfully");
 
 			// Print
-			Thread.sleep(15000);
-			String QuoteNumber = driver.findElement(By.xpath(loc.getProperty("QuoteNumber_XPATH"))).getText();
-			output("The Quote Number is: "+QuoteNumber);
-			write(QuoteNumber, m, 24, rowNum);
-			Thread.sleep(5000);
-			String QuoteStatus = driver.findElement(By.xpath(loc.getProperty("QuoteStatus_XPATH"))).getText();
-			output("The Quote Status is: "+QuoteStatus);
-			write(QuoteStatus, m, 25, rowNum);
-			Thread.sleep(5000);
-			String policyNumber = driver.findElement(By.xpath(loc.getProperty("PloicyNumber_XPATH"))).getText();
-			output(policyNumber);
-			write(policyNumber, m, 26, rowNum);
-			write("Policy is Issued Successfully", m, 49, rowNum);
-			test.pass("<b>" + "<font color=" + "green>" + "Policy is Issued successfully" + "</font>" + "</b>");
-			Thread.sleep(5000);
-			String VehicleSumInsured = driver.findElement(By.xpath(loc.getProperty("VehicleSumInsured_XPATH"))).getText().replace(",", "");
-			write(VehicleSumInsured, m, 27, rowNum);
-			//Vehicle Sum Insured validation
-			if (VehicleSumInsured.equalsIgnoreCase(data.get("Vehicle Sum Insured - Expected"))){
-				write("Pass", m, 51, rowNum);
-			} else {
-				write("Fail", m, 51, rowNum);
-			}
-			Thread.sleep(5000);
-			String ActPremium = driver.findElement(By.xpath(loc.getProperty("ActPremium_XPATH"))).getText();
-			output("The Actual Premium is: "+ActPremium);
-			write(ActPremium, m, 28, rowNum);
-			//Actual Premium validation
-			if (ActPremium.equalsIgnoreCase(data.get("Act Premium - Expected"))){
-				write("Pass", m, 52, rowNum);
-			} else {
-				write("Fail", m, 52, rowNum);
-			}
-			Thread.sleep(5000);
-			String BasicPremium = driver.findElement(By.xpath(loc.getProperty("BasicPremium_XPATH"))).getText();
-			output("The Basic Premium is: "+BasicPremium);
-			write(BasicPremium, m, 29, rowNum);
-			//Basic Premium validation
-			if (BasicPremium.equalsIgnoreCase(data.get("Basic Premium - Expected"))){
-				write("Pass", m, 53, rowNum);
-			} else {
-				write("Fail", m, 53, rowNum);
-			}
-			Thread.sleep(5000);
-			String NCD = driver.findElement(By.xpath(loc.getProperty("NCD_XPATH"))).getText();
-			output("The NCD value is: "+NCD);
-			write(NCD, m, 30, rowNum);
-			//NCD validation
-			if (NCD.equalsIgnoreCase(data.get("NCD - Expected"))){
-				write("Pass", m, 54, rowNum);
-			} else {
-				write("Fail", m, 54, rowNum);
-			}
-			Thread.sleep(5000);
-			String PremiumafterNCD = driver.findElement(By.xpath(loc.getProperty("PremiumafterNCD_XPATH"))).getText();
-			output("The Premium after NCD is: "+PremiumafterNCD);
-			write(PremiumafterNCD, m, 31, rowNum);
-			//Premium After NCD validation
-			if (PremiumafterNCD.equalsIgnoreCase(data.get("Premium after NCD - Expected"))){
-				write("Pass", m, 55, rowNum);
-			} else {
-				write("Fail", m, 55, rowNum);
-			}
-			Thread.sleep(5000);
-			String ExtraBenefitsTotal = driver.findElement(By.xpath(loc.getProperty("ExtraBenefitsTotal_XPATH"))).getText();
-			output("The Extra Benefits Total value is: "+ExtraBenefitsTotal);
-			write(ExtraBenefitsTotal, m, 32, rowNum);
-			//Extra Benefits Total validation
-			if (ExtraBenefitsTotal.equalsIgnoreCase(data.get("Extra Benefits Total - Expected"))){
-				write("Pass", m, 56, rowNum);
-			} else {
-				write("Fail", m, 56, rowNum);
-			}
-			Thread.sleep(5000);
-			String GrossPremium = driver.findElement(By.xpath(loc.getProperty("GrossPremium_XPATH"))).getText();
-			output("The Gross Premium value is: "+GrossPremium);
-			write(GrossPremium, m, 33, rowNum);
-			//GrossPremium validation
-			if (GrossPremium.equalsIgnoreCase(data.get("Gross Premium - Expected"))){
-				write("Pass", m, 57, rowNum);
-			} else {
-				write("Fail", m, 57, rowNum);
-			}
-			Thread.sleep(5000);
-			String Rebate = driver.findElement(By.xpath(loc.getProperty("Rebate_XPATH"))).getText();
-			output("The Rebate value is: "+Rebate);
-			write(Rebate, m, 34, rowNum);
-			//Rebate validation
-			if (Rebate.equalsIgnoreCase(data.get("Rebate - Expected"))){
-				write("Pass", m, 58, rowNum);
-			} else {
-				write("Fail", m, 58, rowNum);
-			}
-			Thread.sleep(5000);
-			String SST = driver.findElement(By.xpath(loc.getProperty("SST_XPATH"))).getText();
-			output("The SST value is: "+SST);
-			write(SST, m, 35, rowNum);
-			//SST validation
-			if (SST.equalsIgnoreCase(data.get("SST - Expected"))){
-				write("Pass", m, 59, rowNum);
-			} else {
-				write("Fail", m, 59, rowNum);
-			}
-			Thread.sleep(5000);
-			String StampDuty = driver.findElement(By.xpath(loc.getProperty("StampDuty_XPATH"))).getText();
-			output("The Stamp Duty is: "+StampDuty);
-			write(StampDuty, m, 36, rowNum);
-			//StampDuty validation
-			if (StampDuty.equalsIgnoreCase(data.get("Stamp Duty - Expected"))){
-				write("Pass", m, 60, rowNum);
-			} else {
-				write("Fail", m, 60, rowNum);
-			}
-			Thread.sleep(5000);
-			//TotalPayablePremium is in  the range of Expected Premium
-			String TotalPayablePremiumText = driver.findElement(By.xpath(loc.getProperty("TotalPayablePremium_XPATH"))).getText().trim();
-			output("The Total Payable Premium is: " + TotalPayablePremiumText);
-			write(TotalPayablePremiumText, m, 37, rowNum);
+						Thread.sleep(25000);
+						WebElement QuoteNum = Webprint("QuoteNumber_XPATH");
+						String QuoteNumber = QuoteNum.getText();
+						output("Quote Number is: " + QuoteNumber);
+						write(QuoteNumber, m, 12, rowNum);
 
-			// Retrieve Expected Premium and Actual/Expected Result
-			String expectedPremiumText = data.get("Expected Premium") != null ? data.get("Expected Premium").trim() : "";
-			String actualResult = data.get("Actual Result") != null ? data.get("Actual Result").trim() : "";
-			String expectedResult = data.get("Expected Result") != null ? data.get("Expected Result").trim() : "";
+						WebElement QuoteSta = Webprint("QuoteStatus3_XPATH");
+						String QuoteStatus = QuoteSta.getText();
+						output("Quote Status is: " + QuoteStatus);
+						write(QuoteStatus, m, 13, rowNum);
+						WebElement PN = Webprint("PloicyNumber_XPATH");
+						String policyNumber = PN.getText();
+						output(policyNumber);
+						write(policyNumber, m, 14, rowNum);
+						write("Policy is Issued Successfully", m, 37, rowNum);
+						test.pass("<b>" + "<font color=" + "green>" + "Policy is Issued successfully" + "</font>" + "</b>");
 
-			try {
-				// Remove "MYR" and trim spaces
-				TotalPayablePremiumText = TotalPayablePremiumText.replace("MYR ", "").trim();
-				expectedPremiumText = expectedPremiumText.replace("MYR ", "").trim();
+						WebElement VSI = Webprint("VehicleSumInsured_XPATH");
+						String VehicleSumInsured = VSI.getText().replace(",", "");
+						write(VehicleSumInsured, m, 15, rowNum);
+						//Vehicle Sum Insured validation
+						if (VehicleSumInsured.equalsIgnoreCase(data.get("Vehicle Sum Insured - Expected"))){
+							write("Pass", m, 39, rowNum);
+						} else {
+							write("Fail", m, 39, rowNum);
+						}
 
-				// Convert to double
-				double TotalPayablePremium = Double.parseDouble(TotalPayablePremiumText);
-				double expectedPremium = Double.parseDouble(expectedPremiumText);
+						WebElement Act = Webprint("ActPremium_XPATH");			
+						String ActPremium = Act.getText();
+						output("The Actual Premium is: "+ActPremium);
+						write(ActPremium, m, 16, rowNum);
+						//Actual Premium validation
+						if (ActPremium.equalsIgnoreCase(data.get("Act Premium - Expected"))){
+							write("Pass", m, 40, rowNum);
+						} else {
+							write("Fail", m, 40, rowNum);
+						}
 
-				// Calculate the range (±0.5% tolerance)
-				double lowerBound = expectedPremium * 0.995;
-				double upperBound = expectedPremium * 1.005;
+						WebElement Basic = Webprint("BasicPremium_XPATH");
+						String BasicPremium = Basic.getText();
+						output("The Basic Premium is: "+BasicPremium);
+						write(BasicPremium, m, 17, rowNum);
+						//Basic Premium validation
+						if (BasicPremium.equalsIgnoreCase(data.get("Basic Premium - Expected"))){
+							write("Pass", m, 41, rowNum);
+						} else {
+							write("Fail", m, 41, rowNum);
+						}
 
-				// Check if premium is within range
-				boolean isPremiumMatched = (TotalPayablePremium >= lowerBound && TotalPayablePremium <= upperBound);
-				boolean isResultMatched = actualResult.equalsIgnoreCase(expectedResult);
+						WebElement NCD2 = Webprint("NCD_XPATH");
+						String NCD = NCD2.getText();
+						output("The NCD value is: "+NCD);
+						write(NCD, m, 18, rowNum);
+						//NCD validation
+						if (NCD.equalsIgnoreCase(data.get("NCD - Expected"))){
+							write("Pass", m, 42, rowNum);
+						} else {
+							write("Fail", m, 42, rowNum);
+						}
+						Thread.sleep(5000);
+						String PremiumafterNCD = driver.findElement(By.xpath(loc.getProperty("PremiumafterNCD_XPATH"))).getText();
+						output("The Premium after NCD is: "+PremiumafterNCD);
+						write(PremiumafterNCD, m, 19, rowNum);
+						//Premium After NCD validation
+						if (PremiumafterNCD.equalsIgnoreCase(data.get("Premium after NCD - Expected"))){
+							write("Pass", m, 43, rowNum);
+						} else {
+							write("Fail", m, 43, rowNum);
+						}
 
-				if (isPremiumMatched && isResultMatched) {
-					test.pass("<b><font color='green'>The premium is within the acceptable range</font></b>");
-					write("Pass", m, 61, rowNum);
-				} else {
-					test.fail("<b><font color='red'>The Premium does not match within the range</font></b>");
-					write("Fail", m, 61, rowNum);
-				}
-			} catch (NumberFormatException e) {
-				test.fail("<b><font color='red'>Error: Unable to parse premium values</font></b>");
-				output("Error parsing premium values: " + e.getMessage());
-				write("Error", m, 61, rowNum);
-			}
+						WebElement EBT = Webprint("ExtraBenefitsTotal_XPATH");
+						String ExtraBenefitsTotal = EBT.getText();
+						output("The Extra Benefits Total value is: "+ExtraBenefitsTotal);
+						write(ExtraBenefitsTotal, m, 20, rowNum);
+						//Extra Benefits Total validation
+						if (ExtraBenefitsTotal.equalsIgnoreCase(data.get("Extra Benefits Total - Expected"))){
+							write("Pass", m, 44, rowNum);
+						} else {
+							write("Fail", m, 44, rowNum);
+						}
+
+						WebElement GP = Webprint("GrossPremium_XPATH");
+						String GrossPremium = GP.getText();
+						output("The Gross Premium value is: "+GrossPremium);
+						write(GrossPremium, m, 21, rowNum);
+						//GrossPremium validation
+						if (GrossPremium.equalsIgnoreCase(data.get("Gross Premium - Expected"))){
+							write("Pass", m, 45, rowNum);
+						} else {
+							write("Fail", m, 45, rowNum);
+						}
+
+						WebElement RP = Webprint("Rebate_XPATH");
+						String Rebate = RP.getText();
+						output("The Rebate value is: "+Rebate);
+						write(Rebate, m, 22, rowNum);
+						//Rebate validation
+						if (Rebate.equalsIgnoreCase(data.get("Rebate - Expected"))){
+							write("Pass", m, 46, rowNum);
+						} else {
+							write("Fail", m, 46, rowNum);
+						}
+
+						WebElement Tax = Webprint("SST_XPATH");
+						String SST = Tax.getText();
+						output("The SST value is: "+SST);
+						write(SST, m, 23, rowNum);
+						//SST validation
+						if (SST.equalsIgnoreCase(data.get("SST - Expected"))){
+							write("Pass", m, 47, rowNum);
+						} else {
+							write("Fail", m, 47, rowNum);
+						}
+
+						WebElement SD = Webprint("StampDuty_XPATH");
+						String StampDuty = SD.getText();
+						output("The Stamp Duty is: "+StampDuty);
+						write(StampDuty, m, 24, rowNum);
+						//StampDuty validation
+						if (StampDuty.equalsIgnoreCase(data.get("Stamp Duty - Expected"))){
+							write("Pass", m, 48, rowNum);
+						} else {
+							write("Fail", m, 48, rowNum);
+						}
+
+						WebElement TPP = Webprint("TotalPayablePremium_XPATH");
+						//TotalPayablePremium is in  the range of Expected Premium
+						String TotalPayablePremiumText = TPP.getText().trim();
+						output("The Total Payable Premium is: " + TotalPayablePremiumText);
+						write(TotalPayablePremiumText, m, 25, rowNum);
+
+
+						// Retrieve Expected Premium and Actual/Expected Result
+						String expectedPremiumText = data.get("Expected Premium") != null ? data.get("Expected Premium").trim() : "";
+						String actualResult = data.get("Actual Result") != null ? data.get("Actual Result").trim() : "";
+						String expectedResult = data.get("Expected Result") != null ? data.get("Expected Result").trim() : "";
+
+						try {
+							// Remove "MYR" and trim spaces
+							TotalPayablePremiumText = TotalPayablePremiumText.replace("MYR ", "").trim();
+							expectedPremiumText = expectedPremiumText.replace("MYR ", "").trim();
+
+							// Convert to double
+							double TotalPayablePremium = Double.parseDouble(TotalPayablePremiumText);
+							double expectedPremium = Double.parseDouble(expectedPremiumText);
+
+							// Calculate the range (±0.5% tolerance)
+							double lowerBound = expectedPremium * 0.995;
+							double upperBound = expectedPremium * 1.005;
+
+							// Check if premium is within range
+							boolean isPremiumMatched = (TotalPayablePremium >= lowerBound && TotalPayablePremium <= upperBound);
+							boolean isResultMatched = actualResult.equals(expectedResult);
+
+							if (isPremiumMatched && isResultMatched) {
+								test.pass("<b><font color='green'>The premium is within the acceptable range</font></b>");
+								write("Pass", m, 49, rowNum);
+							} else {
+								test.fail("<b><font color='red'>The Premium does not match within the range</font></b>");
+								write("Fail", m, 49, rowNum);
+							}
+						} catch (NumberFormatException e) {
+							test.fail("<b><font color='red'>Error: Unable to parse premium values</font></b>");
+							output("Error parsing premium values: " + e.getMessage());
+							write("Error", m, 49, rowNum);
+						}
 			// Checking the file size
 			/*
 			 * String downloadPath = "C:/Users/dell/Downloads/Quote - undefined.pdf"; File

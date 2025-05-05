@@ -12,6 +12,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -32,7 +33,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
  
@@ -137,6 +140,24 @@ public class TestBaseNew {
 				System.out.println("Home Page opened successfully");
 		  }
 	  }
+	public void Home(String locator) throws InterruptedException {
+		 
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+ 
+		if (locator.endsWith("_CSS")) {
+			WebElement element = wait
+					.until(ExpectedConditions.elementToBeClickable(By.cssSelector(baseloc.getProperty(locator))));
+			element.click();
+		} else if (locator.endsWith("_XPATH")) {
+			WebElement element = wait
+					.until(ExpectedConditions.elementToBeClickable(By.xpath(baseloc.getProperty(locator))));
+			element.click();
+		} else if (locator.endsWith("_ID")) {
+			WebElement element = wait
+					.until(ExpectedConditions.elementToBeClickable(By.id(baseloc.getProperty(locator))));
+			element.click();
+		}
+	}
 	public void Baseclick(String locator) throws InterruptedException {
 
 		if (locator.endsWith("_CSS")) {
@@ -150,44 +171,125 @@ public class TestBaseNew {
 		//CustomListeners.testReport.get().log(Status.INFO, "Clicking on : " + locator);
 	}
 	public void click(String locator) throws InterruptedException {
-
+		 
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+ 
 		if (locator.endsWith("_CSS")) {
-			driver.findElement(By.cssSelector(loc.getProperty(locator))).click();
+			WebElement element = wait
+					.until(ExpectedConditions.elementToBeClickable(By.cssSelector(loc.getProperty(locator))));
+			element.click();
 		} else if (locator.endsWith("_XPATH")) {
-			Thread.sleep(10000);
-			driver.findElement(By.xpath(loc.getProperty(locator))).click();
+			WebElement element = wait
+					.until(ExpectedConditions.elementToBeClickable(By.xpath(loc.getProperty(locator))));
+			element.click();
 		} else if (locator.endsWith("_ID")) {
-			driver.findElement(By.id(loc.getProperty(locator))).click();
+			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id(loc.getProperty(locator))));
+			element.click();
 		}
-		//CustomListeners.testReport.get().log(Status.INFO, "Clicking on : " + locator);
+	}
+	public void Addclick(String locator) throws InterruptedException {
+		 
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+ 
+		if (locator.endsWith("_CSS")) {
+			WebElement element = wait
+					.until(ExpectedConditions.elementToBeClickable(By.cssSelector(loc.getProperty(locator))));
+			element.click();
+		} else if (locator.endsWith("_XPATH")) {
+			WebElement element = wait
+					.until(ExpectedConditions.elementToBeClickable(By.xpath(loc.getProperty(locator))));
+			element.click();
+		} else if (locator.endsWith("_ID")) {
+			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id(loc.getProperty(locator))));
+			element.click();
+		}
 	}
 	public void Enter(String locator, String value) throws InterruptedException {
-
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60)); // Explicit Wait
+		WebElement element = null;
 		if (locator.endsWith("_CSS")) {
-			driver.findElement(By.cssSelector(loc.getProperty(locator))).sendKeys(value);
+			element = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(loc.getProperty(locator))));
 		} else if (locator.endsWith("_XPATH")) {
-			driver.findElement(By.xpath(loc.getProperty(locator))).sendKeys(value);
+			element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(loc.getProperty(locator))));
 		} else if (locator.endsWith("_ID")) {
-			driver.findElement(By.id(loc.getProperty(locator))).sendKeys(value);
+			element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(loc.getProperty(locator))));
 		}
-
-		//CustomListeners.testReport.get().log(Status.INFO, "Typing in : " + locator + " entered value as " + value);
-
+ 
+		if (element != null) {
+			element.sendKeys(value);
+		}
 	}
+ 
 	public void Clear(String locator) throws InterruptedException {
-
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		WebElement element = null;
 		if (locator.endsWith("_CSS")) {
-			driver.findElement(By.cssSelector(loc.getProperty(locator))).clear();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(loc.getProperty(locator))));
+			element.clear();
 		} else if (locator.endsWith("_XPATH")) {
-			Thread.sleep(10000);
-			driver.findElement(By.xpath(loc.getProperty(locator))).clear();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(loc.getProperty(locator))));
+			element.clear();
 		} else if (locator.endsWith("_ID")) {
-			driver.findElement(By.id(loc.getProperty(locator))).clear();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(loc.getProperty(locator))));
+			element.clear();
 		}
-		//CustomListeners.testReport.get().log(Status.INFO, "Clicking on : " + locator);
+		// CustomListeners.testReport.get().log(Status.INFO, "Clicking on : " +
+		// locator);
 	}
-
-	
+	public String GetText(String locator) throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+		WebElement element = null;
+		if (locator.endsWith("_CSS")) {
+			element = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(loc.getProperty(locator))));
+			element.getText();
+		} else if (locator.endsWith("_XPATH")) {
+			element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(loc.getProperty(locator))));
+			element.getText();
+		} else if (locator.endsWith("_ID")) {
+			element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(loc.getProperty(locator))));
+			element.getText();
+		}
+		// CustomListeners.testReport.get().log(Status.INFO, "Clicking on : " +
+		// locator);
+		// return element;
+		return locator;
+	}
+ 
+	public String print(String locator) throws InterruptedException {
+		String element = null;
+		if (locator.endsWith("_CSS")) {
+			element = driver.findElement(By.cssSelector(loc.getProperty(locator))).getAttribute("value");
+		} else if (locator.endsWith("_XPATH")) {
+			element = driver.findElement(By.xpath(loc.getProperty(locator))).getAttribute("value");
+		} else if (locator.endsWith("_ID")) {
+			element = driver.findElement(By.id(loc.getProperty(locator))).getAttribute("value");
+		}
+		// CustomListeners.testReport.get().log(Status.INFO, "Clicking on : " +
+		// locator);
+		return element;
+	}
+ 
+	public WebElement Webprint(String locator) throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+		WebElement element = null;
+		if (locator.endsWith("_CSS")) {
+			element = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(loc.getProperty(locator))));
+			element.getAttribute("value");
+		} else if (locator.endsWith("_XPATH")) {
+			element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(loc.getProperty(locator))));
+			element.getAttribute("value");
+		} else if (locator.endsWith("_ID")) {
+			element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(loc.getProperty(locator))));
+			element.getAttribute("value");
+		}
+		// CustomListeners.testReport.get().log(Status.INFO, "Clicking on : " +
+		// locator);
+		return element;
+	}
+ 
 	static WebElement dropdown;
 
 	public void select(String locator, String value) {
@@ -210,7 +312,7 @@ public class TestBaseNew {
 		System.out.println(value);	
 	}
 
-	public String print(String locator) throws InterruptedException {
+	public String print2(String locator) throws InterruptedException {
 		String element = null;
 		if (locator.endsWith("_CSS")) {
 			element = driver.findElement(By.cssSelector(loc.getProperty(locator))).getAttribute("value");
@@ -224,18 +326,7 @@ public class TestBaseNew {
 		return element;
 
 	}
-	public void clear(String locator) throws InterruptedException {
-		 
-		if (locator.endsWith("_CSS")) {
-			driver.findElement(By.cssSelector(loc.getProperty(locator))).clear();
-		} else if (locator.endsWith("_XPATH")) {
-			Thread.sleep(5000);
-			driver.findElement(By.xpath(loc.getProperty(locator))).clear();
-		} else if (locator.endsWith("_ID")) {
-			driver.findElement(By.id(loc.getProperty(locator))).clear();
-		}
-		//CustomListeners.testReport.get().log(Status.INFO, "Clicking on : " + locator);
-	}
+	
 	public void write(String result,Method m, int colNum, int rowNum) {
 		String excelFilePath = System.getProperty("user.dir") + "\\src\\test\\resources\\TestData\\PrivateCar.xlsx";
 		try {
@@ -275,6 +366,24 @@ public class TestBaseNew {
 			ex.printStackTrace();
 		}
 		return excelFilePath;
+	}
+	public void lodclick(String locator) throws InterruptedException {
+		 
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+ 
+		if (locator.endsWith("_CSS")) {
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".dx-loading-backdrop")));
+			WebElement element = driver.findElement(By.cssSelector(loc.getProperty(locator)));
+			element.click();
+		} else if (locator.endsWith("_XPATH")) {
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".dx-loading-backdrop")));
+			WebElement element = driver.findElement(By.xpath(loc.getProperty(locator)));
+			element.click();
+		} else if (locator.endsWith("_ID")) {
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".dx-loading-backdrop")));
+			WebElement element = driver.findElement(By.id(loc.getProperty(locator)));
+			element.click();
+		}
 	}
 	
 	@AfterSuite(alwaysRun = true)
