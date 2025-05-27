@@ -210,10 +210,11 @@ public class Reg_Business extends TestBase {
 		Enter("nmeofID_XPATH", data.get("Name As Per ID"));
 		output("Policy Holder name Given successfully");
 		//Thread.sleep(5000);
-		WebElement cancelButton = driver.findElement(By.xpath("//button[@id='cancel']"));
-		js.executeScript("arguments[0].scrollIntoView(true);", cancelButton);
+//		WebElement cancelButton = driver.findElement(By.xpath("//button[@id='cancel']"));
+//		js.executeScript("arguments[0].scrollIntoView(true);", cancelButton);
 		//Thread.sleep(10000);
-		click("VldOnrISMBtn_XPATH");
+		//click("VldOnrISMBtn_XPATH");
+		click("Validate_XPATH");
 		//Thread.sleep(10000);
 		output("Validate owner as per ISM button clicked successfully");
 		// NCD Transfer Details
@@ -258,7 +259,17 @@ public class Reg_Business extends TestBase {
 		//Thread.sleep(5000);
 		output("Driving Experience selected successfully");
 		test.log(Status.INFO, "Vehicle Owner Details Given successfully");
-		//Thread.sleep(15000);
+//		Thread.sleep(15000);
+//		click("HPToggle_XPATH");
+//		output("Toggle Button is selected successfully");
+//		Thread.sleep(15000);
+//		click("HPDropdown_XPATH");
+//		output("Dropdown is clicked successfully");
+//		Enter("HPSel_XPATH", data.get("HP"));
+//		output("Hire Purchase is selected successfully");
+//		Thread.sleep(15000);
+//		click("SelHP_XPATH");
+//		output("The Hire Purchase is selected successfully");
 		try{
 			lodclick("Yes_XPATH");
 			output("Yes button is selected successfully");
@@ -353,6 +364,11 @@ public class Reg_Business extends TestBase {
 		Thread.sleep(25000);
 		click("IssuePolicy_XPATH");
 		output("Issue Policy Button Clicked successfully");
+		Thread.sleep(45000);
+		click("PPS_XPATH");
+		click("PPSCB_XPATH");
+		click("PPSSubmit_XPATH");
+		output("The Policy Schedule is downloaded successfully");
 //		Thread.sleep(35000);
 //		click("Download_XPATH");
 //		output("Download & e-mail Policy button clicked successfully");

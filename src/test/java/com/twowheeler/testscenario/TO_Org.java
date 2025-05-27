@@ -31,14 +31,15 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.twowheeler.base.TestBase;
+import com.twowheeler.base.TestBaseTO;
+import com.twowheeler.base.TestBaseTOOrg;
 import com.twowheeler.utilities.MonitoringMail;
 import com.twowheeler.utilities.TestConfig;
 import com.twowheeler.utilities.TestUtil;
 
 import Utilities_UAT_ScreenRecord.Motor_PersonBP_ScreenRecord;
 
-public class TO_Org extends TestBase {
-
+public class TO_Org extends TestBaseTOOrg {
 	public ExtentSparkReporter htmlReporter;
 	public ExtentReports extent;
 	public ExtentTest test;
@@ -52,7 +53,7 @@ public class TO_Org extends TestBase {
 	public void setReport() throws IOException {
 		//extent.setReportUsesManualConfiguration(true);
 
-		htmlReporter = new ExtentSparkReporter("./reports/PCTOOrg-UAT-Reports.html");
+		htmlReporter = new ExtentSparkReporter("./reports/PCTO-UAT-Reports.html");
 
 		htmlReporter.config().setEncoding("utf-8");
 		htmlReporter.config().setDocumentTitle("Private Car SIT Automation Reports");
@@ -68,21 +69,21 @@ public class TO_Org extends TestBase {
 	}
 
 	@Test(dataProviderClass = TestUtil.class, dataProvider = "dp", alwaysRun = true)
-	public void PCRV(Hashtable<String, String> data, Method m) throws Exception {
+	public void PCTO(Hashtable<String, String> data, Method m) throws Exception {
 		// ScreenRecord Start
-				Motor_PersonBP_ScreenRecord.startRecord("PersonBP");
+		Motor_PersonBP_ScreenRecord.startRecord("PersonBP");
 		try {
-		test = extent.createTest("Registered Car Test");
+		test = extent.createTest("Private Car Test");
 		if (data.get("Runmode").equalsIgnoreCase("N")) {
-			throw new SkipException("Skipping the test case " + "PCRV".toUpperCase() + " as the Run mode is NO");
+			throw new SkipException("Skipping the test case " + "PCTO".toUpperCase() + " as the Run mode is NO");
 		}else {
 			test.pass("<b>" + "<font color=" + "green>" + "Runmode is satisfied" + "</font>" + "</b>");
 		}
 		// Clicking on QMS Tile
-		Thread.sleep(5000);
-		Baseclick("QMSTile_XPATH");
+		//Thread.sleep(5000);
+		Home("QMSTile_XPATH");
 		output("Qms Tile Click successfully");
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 
 		// Quote Dash board display
 		Baseclick("NewQuote_XPATH");
@@ -90,25 +91,25 @@ public class TO_Org extends TestBase {
 		Baseclick("MotorTile_XPATH");
 		output("Motor Tile clicked successfully");
 		Baseclick("TOVeh_XPATH");
-		output("TO Selected Successfully");
+		output("TO Vehicle Selected Successfully");
 		Baseclick("nxtbtn_XPATH");
 		output("Next Button Clicked successfully");
 		test.log(Status.INFO, "Type of Motor Car Details Given successfully");
 
 		// Motor Coverage(s) Screen
 		// Vehicle Search and Vehicle Details tab
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		Enter("VeclregNo_XPATH", data.get("Vechcle Reg"));
 		output("Vehicle Number Entered successfully");
 		click("POUDrpDon_XPATH");
 		output("Place Of Use Drop Down Clicked successfully");
-		Thread.sleep(1500);
+		//Thread.sleep(1500);
 		Enter("StateEntr_XPATH", data.get("Place Of Use"));
 		output("State Entered successfully");
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		click("Statesel_XPATH");
 		output("Place Of Use selected successfully");
-		Thread.sleep(3500);
+		//Thread.sleep(3500);
 		click("VeclsrcBtn_XPATH");
 		output("Vehicle search button clicked successfully");
 		output("Vehicle Data retrieved from IRBM successfully");
@@ -118,16 +119,16 @@ public class TO_Org extends TestBase {
 			WebElement button = driver.findElement(By.xpath("//button[@id='cancel']"));
 			js = (JavascriptExecutor) driver;
 			js.executeScript("arguments[0].scrollIntoView(true);", button);
-			Thread.sleep(5000);
+			//Thread.sleep(5000);
 			click("CovTpeDrpDon_XPATH");
 			//			click("CovNew_XPATH");
 			output("Coverage Type Drop Down Clicked successfully");
 			Enter("CovrvaleEntr_XPATH", data.get("Coverage Type"));
 			output("Coverage Type Given successfully");
-			Thread.sleep(1000);
+			//Thread.sleep(1000);
 			click("CovrTypSel_XPATH");
 			output("Coverage Type clicked successfully");
-			Thread.sleep(2000);
+			//Thread.sleep(2000);
 			//			String vehSIBefore = print("VehSI_XPATH").replace(",", "");
 			//			System.out.println("The Vehicle Sum Insured is: "+vehSIBefore);
 			//			double vehSIInt = Double.parseDouble(vehSIBefore);
@@ -142,15 +143,15 @@ public class TO_Org extends TestBase {
 			if (String.valueOf(AgreedValue).equals("0")) {
 				output("Test case not related to Agreed Value");
 			} else {
-				Thread.sleep(3000);
+				//Thread.sleep(3000);
 				click("Agreed_XPATH");
 				output("Agreed Value Check Box clicked successfully");
 				click("AdjAgreed_XPATH");
 				output("Adjust Agreed Value Check Box clicked successfully");
-				Thread.sleep(1500);
+				//Thread.sleep(1500);
 				Clear("AgreedEntr_XPATH");
 				output("Agreed Value cleared successfully");
-				Thread.sleep(2000);
+				//Thread.sleep(2000);
 				Enter("AgreedEntr_XPATH", data.get("Agreed Value").replace(".0", ""));
 				output("Agreed Value extracted from excel and Given successfully");
 				//				double agreedValueInt = 10;
@@ -166,17 +167,17 @@ public class TO_Org extends TestBase {
 			WebElement button = driver.findElement(By.xpath("//button[@id='cancel']"));
 			js = (JavascriptExecutor) driver;
 			js.executeScript("arguments[0].scrollIntoView(true);", button);
-			Thread.sleep(5000);
+			//Thread.sleep(5000);
 			click("CovTpeDrpDon_XPATH");
 			//			click("CovNew_XPATH");
 			output("Coverage Type Drop Down Clicked successfully");
-			Thread.sleep(5000);
+			//Thread.sleep(5000);
 			click("TPCoverclick_XPATH");
 			//			click("TPNew_XPATH");
 			output("Type of Coverage clicked successfully");
 		}
 		test.log(Status.INFO, "Coverage Details Given successfully");
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		String inceptionDate = print("InsDt_XPATH");
 		output("Inception date is: "+inceptionDate);
 		write(inceptionDate, m, 7, rowNum);
@@ -185,20 +186,20 @@ public class TO_Org extends TestBase {
 		output("Expiry date is: "+expiryDate);
 		write(expiryDate, m, 8, rowNum);
 		test.log(Status.INFO, "The Expiry Date is: "+expiryDate);
-		Thread.sleep(5000);
-//		click("Org_XPATH");
-//		output("The Organisation Button is selected Successfully");
-//		Thread.sleep(5000);
+		//Thread.sleep(5000);
+		click("Org_XPATH");
+		output("The Organisation Button is selected Successfully");
+		//Thread.sleep(5000);
 		Enter("PHID_XPATH", data.get("PH ID"));
 		output("Policy Holder id Given successfully");
 		Enter("nmeofID_XPATH", data.get("Name As Per ID"));
 		output("Policy Holder name Given successfully");
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		WebElement cancelButton = driver.findElement(By.xpath("//button[@id='cancel']"));
 		js.executeScript("arguments[0].scrollIntoView(true);", cancelButton);
-		Thread.sleep(10000);
+		//Thread.sleep(10000);
 		click("VldOnrISMBtn_XPATH");
-		Thread.sleep(10000);
+		//Thread.sleep(10000);
 		output("Validate owner as per ISM button clicked successfully");
 		// NCD Transfer Details
 //				String NCDV = read("PCRV", 35, rowNum);
@@ -220,7 +221,8 @@ public class TO_Org extends TestBase {
 //								//output("Confrim NCD Transfer? Check Box Clicked successfully");
 //							}
 		//click("SaveBtn_XPATH");
-		click("DevSaveBtn_XPATH");
+		//click("DevSaveBtn_XPATH");
+		click("Save2_XPATH");
 		output("Save Button clicked successfully");
 		test.log(Status.INFO, "Vehicle Details Given successfully");
 
@@ -228,21 +230,47 @@ public class TO_Org extends TestBase {
 		// Additional Details of Proposer
 		// Motor Additional Information
 		// Additional Details of Proposer
-		Thread.sleep(3000);
-		click("DrvExpDrpDwn_XPATH");
+		Thread.sleep(20000);
+		//click("DrvExpDrpDwn_XPATH");
+		click("Drv2_XPATH");
 		output("Driving Experience DropDown clicked successfully");
-		Thread.sleep(1500);
+		//Thread.sleep(1500);
 		Enter("DrvExpGvn_XPATH", data.get("Driving Experience"));
 		output("Driving Experience Given clicked successfully");
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		click("DrvExpDrpDwnSel_XPATH");
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		output("Driving Experience selected successfully");
-		click("Yes_XPATH");
-		output("Policy holder verification button YES is clicked Successfully.");
-		test.log(Status.INFO, "Vehicle Owner Details Given successfully");
+		//Thread.sleep(15000);
+				try{
+					lodclick("Yes_XPATH");
+					output("Yes button is selected successfully");
+				}
+				catch(Exception e) {
+					WebElement button_de = driver.findElement(By.xpath("/html/body/dx-dijta-home-root/dx-vertical-layout/dx-layout/content/app-parent-qms/dx-compact-content/dx-layout-content/div/div/dx-qms-private-motor/div/dx-qms-nav-menu-layout/div[2]/div/div/app-private-motor-coverage-details/div/dx-qms-nav-menu-content/div/div/div/div[1]/mat-accordion/mat-expansion-panel/div/div/app-motor-address/form/div/div[6]/div[1]"));
+					js.executeScript("arguments[0].scrollIntoView(true);", button_de);
+					Addclick("State_XPATH");
+					output("State Drop Down Clicked successfully");
+					//Thread.sleep(1500);
+					Enter("StateS_XPATH", data.get("Place Of Use2"));
+					Addclick("StateSel_XPATH");
+					output("State Entered successfully");
+					//Thread.sleep(2000);
+					Addclick("Post_XPATH");
+					Enter("PostS_XPATH", data.get("PC").replace(".0", ""));
+					Addclick("PostSel_XPATH");
+					output("Postal Code Entered successfully");
+					//Thread.sleep(2000);
+					Addclick("Street_XPATH");
+					//Thread.sleep(5000);
+					//Enter("StreetS_XPATH", data.get("PC2"));
+					//Thread.sleep(2000);
+					Addclick("Desa_XPATH");
+					output("Street Entered successfully");
+					//Thread.sleep(2000);
+				}
 		// E-INvoce for Scroll Down
-		Thread.sleep(25000);
+		//Thread.sleep(25000);
 		WebElement InvSD = driver.findElement(By.xpath(loc.getProperty("Inv_XPATH")));
 		js.executeScript("arguments[0].scrollIntoView();", InvSD);
 		// Rebate
@@ -259,55 +287,60 @@ public class TO_Org extends TestBase {
 		//		}
 		// PIAM Analysis Code
 		// Garage Type
-		Thread.sleep(10000);
+		Thread.sleep(25000);
 		click("GrgTpDR_XPATH");
 		output("Garage Type Drop Down was Click successfully");
-		Thread.sleep(1500);
+		//Thread.sleep(1500);
 		Enter("GrgTypGivn_XPATH", data.get("Garage Type"));
 		output("Garage Type Given successfully");
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		click("GrgTypSect_XPATH");
-		Thread.sleep(1500);
+		//Thread.sleep(1500);
 		output("Garage Type Drop Down was selected successfully");
 		// Anti Theft
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		click("AntThfDR_XPATH");
 		output("Anti Theft Drop Down was Click successfully");
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		Enter("AntThtGivn_XPATH", data.get("Anti Theft"));
 		output("Anti Theft Given successfully");
-		Thread.sleep(1500);
+		//Thread.sleep(1500);
 		click("AntThtSect_XPATH");
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		output("Anti Theft Drop Down was selected successfully");
 		// Safety Features
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		click("SffeDr_XPATH");
 		output("Safety Features Drop Down was Click successfully");
-		Thread.sleep(1500);
+		//Thread.sleep(1500);
 		Enter("SafFeuGivn_XPATH", data.get("Safety Features"));
 		output("Safety Features Given successfully");
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		click("SafFeuSect_XPATH");
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		output("Safety Features Drop Down was selected successfully");
 
 		test.log(Status.INFO, "PIAM Analysis Code Details Given successfully");
 
 
 		//Generate Quote Letter
-		//		click("GenQ_XPATH");
+				click("GenQ_XPATH");
 		//		click("DownQ_XPATH");
-		//		click("Submit_XPATH");
+				click("Submit_XPATH");
 
 		// Policy Issuance
-		Thread.sleep(15000);
-		click("PolicyBtn_XPATH");
+		Thread.sleep(35000);
+		click("PolicyIssue_XPATH");
 		output("Proceed to Policy Issuance Button Clicked successfully");
 		// Issue Policy
-		Thread.sleep(5000);
-		click("IssPolicy_XPATH");
+		Thread.sleep(25000);
+		click("IssuePolicy_XPATH");
 		output("Issue Policy Button Clicked successfully");
+		Thread.sleep(45000);
+		click("PPS_XPATH");
+		click("PPSCB_XPATH");
+		click("PPSSubmit_XPATH");
+		output("The Policy Schedule is downloaded successfully");
 //		Thread.sleep(35000);
 //		click("Download_XPATH");
 //		output("Download & e-mail Policy button clicked successfully");
@@ -324,124 +357,172 @@ public class TO_Org extends TestBase {
 //			test.fail("<b>" + "<font color=" + "red>" + "Policy kit not downloaded successfully" + "</font>" + "</b>");
 //		}
 		// Print
-		Thread.sleep(35000);
-		String QuoteNumber = driver.findElement(By.xpath(loc.getProperty("QuoteNumber_XPATH"))).getText();
-		output(QuoteNumber);
-		write(QuoteNumber, m, 12, rowNum);
-		Thread.sleep(5000);
-		String QuoteStatus = driver.findElement(By.xpath(loc.getProperty("QuoteStatus_XPATH"))).getText();
-		output(QuoteStatus);
-		write(QuoteStatus, m, 13, rowNum);
-		Thread.sleep(5000);
-		String policyNumber = driver.findElement(By.xpath(loc.getProperty("PloicyNumber_XPATH"))).getText();
-		output(policyNumber);
-		write(policyNumber, m, 14, rowNum);
-		write("Policy is Issued Successfully", m, 24, rowNum);
-		test.pass("<b>" + "<font color=" + "green>" + "Policy Issued successfully" + "</font>" + "</b>");
-		Thread.sleep(5000);
-		String VehicleSumInsured = driver.findElement(By.xpath(loc.getProperty("VehicleSumInsured_XPATH"))).getText().replace(",", "");
-		write(VehicleSumInsured, m, 15, rowNum);
-		//		if(data.get("Coverage Type").equalsIgnoreCase("Comprehensive")) {
-		//			String cleanedValue = VehicleSumInsured.replace("MYR", "").trim();
-		//			double sIInt = Double.parseDouble(cleanedValue);
-		//			System.out.println(sIInt);
-		//			Thread.sleep(5000);
-		//			if (Math.floor(finalSI) == Math.floor(sIInt)) {
-		//				test.pass("<b>" + "<font color=" + "green>" + "Vehicle Sum Insured matched after Agreed Value"
-		//						+ "</font>" + "</b>");
-		//			} else {
-		//				test.fail("<b>" + "<font color=" + "red>" + "Vehicle Sum Insured does not match after Agreed Value"
-		//						+ "</font>" + "</b>");
-		//			}
-		//		}
-		Thread.sleep(5000);
-		String ActPremium = driver.findElement(By.xpath(loc.getProperty("ActPremium_XPATH"))).getText();
-		output(ActPremium);
-		write(ActPremium, m, 16, rowNum);
-		Thread.sleep(5000);
-		String BasicPremium = driver.findElement(By.xpath(loc.getProperty("BasicPremium_XPATH"))).getText();
-		output(BasicPremium);
-		write(BasicPremium, m, 17, rowNum);
-		Thread.sleep(5000);
-		String NCD = driver.findElement(By.xpath(loc.getProperty("NCD_XPATH"))).getText();
-		output(NCD);
-		write(NCD, m, 18, rowNum);
-		Thread.sleep(5000);
-		String PremiumafterNCD = driver.findElement(By.xpath(loc.getProperty("PremiumafterNCD_XPATH"))).getText();
-		output(PremiumafterNCD);
-		write(PremiumafterNCD, m, 19, rowNum);
-		Thread.sleep(5000);
-		String ExtraBenefitsTotal = driver.findElement(By.xpath(loc.getProperty("ExtraBenefitsTotal_XPATH"))).getText();
-		output(ExtraBenefitsTotal);
-		write(ExtraBenefitsTotal, m, 20, rowNum);
-		Thread.sleep(5000);
-		String GrossPremium = driver.findElement(By.xpath(loc.getProperty("GrossPremium_XPATH"))).getText();
-		output(GrossPremium);
-		write(GrossPremium, m, 21, rowNum);
-		Thread.sleep(5000);
-		String Rebate = driver.findElement(By.xpath(loc.getProperty("Rebate_XPATH"))).getText();
-		output(Rebate);
-		write(Rebate, m, 22, rowNum);
-		Thread.sleep(5000);
-		String SST = driver.findElement(By.xpath(loc.getProperty("SST_XPATH"))).getText();
-		output(SST);
-		write(SST, m, 23, rowNum);
-		Thread.sleep(5000);
-		String StampDuty = driver.findElement(By.xpath(loc.getProperty("StampDuty_XPATH"))).getText();
-		output(StampDuty);
-		write(StampDuty, m, 24, rowNum);
-		Thread.sleep(5000);
-		//TotalPayablePremium is equals to Expected Premium
-//		String TotalPayablePremium = driver.findElement(By.xpath(loc.getProperty("TotalPayablePremium_XPATH"))).getText();
-//		output("The Total Payable Premium is: "+TotalPayablePremium);
-//		write(TotalPayablePremium, m, 25, rowNum);
-//		if (TotalPayablePremium.equalsIgnoreCase(data.get("Expected Premium")) && data.get("Actual Result").equalsIgnoreCase(data.get("Expected Result"))) {
-//			test.pass("<b>" + "<font color=" + "green>" + "The premium is matched" + "</font>" + "</b>");
-//			write("Pass", m, 29, rowNum);
-//		} else {
-//			test.fail("<b>" + "<font color=" + "red>" + "The Premium does not match" + "</font>" + "</b>");
-//			write("Fail", m, 29, rowNum);
-//		}
-		
-		//TotalPayablePremium is in  the range of Expected Premium
-		String TotalPayablePremiumText = driver.findElement(By.xpath(loc.getProperty("TotalPayablePremium_XPATH"))).getText().trim();
-		output("The Total Payable Premium is: " + TotalPayablePremiumText);
-		write(TotalPayablePremiumText, m, 25, rowNum);
+					Thread.sleep(40000);
+					WebElement QuoteNum = Webprint("QuoteNumber_XPATH");
+					String QuoteNumber = QuoteNum.getText();
+					output("Quote Number is: " + QuoteNumber);
+					write(QuoteNumber, m, 12, rowNum);
 
-		// Retrieve Expected Premium and Actual/Expected Result
-		String expectedPremiumText = data.get("Expected Premium") != null ? data.get("Expected Premium").trim() : "";
-		String actualResult = data.get("Actual Result") != null ? data.get("Actual Result").trim() : "";
-		String expectedResult = data.get("Expected Result") != null ? data.get("Expected Result").trim() : "";
+					WebElement QuoteSta = Webprint("QuoteStatus3_XPATH");
+					String QuoteStatus = QuoteSta.getText();
+					output("Quote Status is: " + QuoteStatus);
+					write(QuoteStatus, m, 13, rowNum);
+					WebElement PN = Webprint("PloicyNumber_XPATH");
+					String policyNumber = PN.getText();
+					output(policyNumber);
+					write(policyNumber, m, 14, rowNum);
+					write("Policy is Issued Successfully", m, 37, rowNum);
+					test.pass("<b>" + "<font color=" + "green>" + "Policy is Issued successfully" + "</font>" + "</b>");
 
-		try {
-		    // Remove "MYR" and trim spaces
-		    TotalPayablePremiumText = TotalPayablePremiumText.replace("MYR ", "").trim();
-		    expectedPremiumText = expectedPremiumText.replace("MYR ", "").trim();
+					WebElement VSI = Webprint("VehicleSumInsured_XPATH");
+					String VehicleSumInsured = VSI.getText().replace(",", "");
+					write(VehicleSumInsured, m, 15, rowNum);
+					//Vehicle Sum Insured validation
+					if (VehicleSumInsured.equalsIgnoreCase(data.get("Vehicle Sum Insured - Expected"))){
+						write("Pass", m, 39, rowNum);
+					} else {
+						write("Fail", m, 39, rowNum);
+					}
 
-		    // Convert to double
-		    double TotalPayablePremium = Double.parseDouble(TotalPayablePremiumText);
-		    double expectedPremium = Double.parseDouble(expectedPremiumText);
+					WebElement Act = Webprint("ActPremium_XPATH");			
+					String ActPremium = Act.getText();
+					output("The Actual Premium is: "+ActPremium);
+					write(ActPremium, m, 16, rowNum);
+					//Actual Premium validation
+					if (ActPremium.equalsIgnoreCase(data.get("Act Premium - Expected"))){
+						write("Pass", m, 40, rowNum);
+					} else {
+						write("Fail", m, 40, rowNum);
+					}
 
-		    // Calculate the range (±0.5% tolerance)
-		    double lowerBound = expectedPremium * 0.995;
-		    double upperBound = expectedPremium * 1.005;
+					WebElement Basic = Webprint("BasicPremium_XPATH");
+					String BasicPremium = Basic.getText();
+					output("The Basic Premium is: "+BasicPremium);
+					write(BasicPremium, m, 17, rowNum);
+					//Basic Premium validation
+					if (BasicPremium.equalsIgnoreCase(data.get("Basic Premium - Expected"))){
+						write("Pass", m, 41, rowNum);
+					} else {
+						write("Fail", m, 41, rowNum);
+					}
 
-		    // Check if premium is within range
-		    boolean isPremiumMatched = (TotalPayablePremium >= lowerBound && TotalPayablePremium <= upperBound);
-		    boolean isResultMatched = actualResult.equals(expectedResult);
+					WebElement NCD2 = Webprint("NCD_XPATH");
+					String NCD = NCD2.getText();
+					output("The NCD value is: "+NCD);
+					write(NCD, m, 18, rowNum);
+					//NCD validation
+					if (NCD.equalsIgnoreCase(data.get("NCD - Expected"))){
+						write("Pass", m, 42, rowNum);
+					} else {
+						write("Fail", m, 42, rowNum);
+					}
+					Thread.sleep(5000);
+					String PremiumafterNCD = driver.findElement(By.xpath(loc.getProperty("PremiumafterNCD_XPATH"))).getText();
+					output("The Premium after NCD is: "+PremiumafterNCD);
+					write(PremiumafterNCD, m, 19, rowNum);
+					//Premium After NCD validation
+					if (PremiumafterNCD.equalsIgnoreCase(data.get("Premium after NCD - Expected"))){
+						write("Pass", m, 43, rowNum);
+					} else {
+						write("Fail", m, 43, rowNum);
+					}
 
-		    if (isPremiumMatched && isResultMatched) {
-		        test.pass("<b><font color='green'>The premium is within the acceptable range</font></b>");
-		        write("Pass", m, 29, rowNum);
-		    } else {
-		        test.fail("<b><font color='red'>The Premium does not match within the range</font></b>");
-		        write("Fail", m, 29, rowNum);
-		    }
-		} catch (NumberFormatException e) {
-		    test.fail("<b><font color='red'>Error: Unable to parse premium values</font></b>");
-		    output("Error parsing premium values: " + e.getMessage());
-		    write("Error", m, 29, rowNum);
-		}
+					WebElement EBT = Webprint("ExtraBenefitsTotal_XPATH");
+					String ExtraBenefitsTotal = EBT.getText();
+					output("The Extra Benefits Total value is: "+ExtraBenefitsTotal);
+					write(ExtraBenefitsTotal, m, 20, rowNum);
+					//Extra Benefits Total validation
+					if (ExtraBenefitsTotal.equalsIgnoreCase(data.get("Extra Benefits Total - Expected"))){
+						write("Pass", m, 44, rowNum);
+					} else {
+						write("Fail", m, 44, rowNum);
+					}
+
+					WebElement GP = Webprint("GrossPremium_XPATH");
+					String GrossPremium = GP.getText();
+					output("The Gross Premium value is: "+GrossPremium);
+					write(GrossPremium, m, 21, rowNum);
+					//GrossPremium validation
+					if (GrossPremium.equalsIgnoreCase(data.get("Gross Premium - Expected"))){
+						write("Pass", m, 45, rowNum);
+					} else {
+						write("Fail", m, 45, rowNum);
+					}
+
+					WebElement RP = Webprint("Rebate_XPATH");
+					String Rebate = RP.getText();
+					output("The Rebate value is: "+Rebate);
+					write(Rebate, m, 22, rowNum);
+					//Rebate validation
+					if (Rebate.equalsIgnoreCase(data.get("Rebate - Expected"))){
+						write("Pass", m, 46, rowNum);
+					} else {
+						write("Fail", m, 46, rowNum);
+					}
+
+					WebElement Tax = Webprint("SST_XPATH");
+					String SST = Tax.getText();
+					output("The SST value is: "+SST);
+					write(SST, m, 23, rowNum);
+					//SST validation
+					if (SST.equalsIgnoreCase(data.get("SST - Expected"))){
+						write("Pass", m, 47, rowNum);
+					} else {
+						write("Fail", m, 47, rowNum);
+					}
+
+					WebElement SD = Webprint("StampDuty_XPATH");
+					String StampDuty = SD.getText();
+					output("The Stamp Duty is: "+StampDuty);
+					write(StampDuty, m, 24, rowNum);
+					//StampDuty validation
+					if (StampDuty.equalsIgnoreCase(data.get("Stamp Duty - Expected"))){
+						write("Pass", m, 48, rowNum);
+					} else {
+						write("Fail", m, 48, rowNum);
+					}
+
+					WebElement TPP = Webprint("TotalPayablePremium_XPATH");
+					//TotalPayablePremium is in  the range of Expected Premium
+					String TotalPayablePremiumText = TPP.getText().trim();
+					output("The Total Payable Premium is: " + TotalPayablePremiumText);
+					write(TotalPayablePremiumText, m, 25, rowNum);
+
+
+					// Retrieve Expected Premium and Actual/Expected Result
+					String expectedPremiumText = data.get("Expected Premium") != null ? data.get("Expected Premium").trim() : "";
+					String actualResult = data.get("Actual Result") != null ? data.get("Actual Result").trim() : "";
+					String expectedResult = data.get("Expected Result") != null ? data.get("Expected Result").trim() : "";
+
+					try {
+						// Remove "MYR" and trim spaces
+						TotalPayablePremiumText = TotalPayablePremiumText.replace("MYR ", "").trim();
+						expectedPremiumText = expectedPremiumText.replace("MYR ", "").trim();
+
+						// Convert to double
+						double TotalPayablePremium = Double.parseDouble(TotalPayablePremiumText);
+						double expectedPremium = Double.parseDouble(expectedPremiumText);
+
+						// Calculate the range (±0.5% tolerance)
+						double lowerBound = expectedPremium * 0.995;
+						double upperBound = expectedPremium * 1.005;
+
+						// Check if premium is within range
+						boolean isPremiumMatched = (TotalPayablePremium >= lowerBound && TotalPayablePremium <= upperBound);
+						boolean isResultMatched = actualResult.equals(expectedResult);
+
+						if (isPremiumMatched && isResultMatched) {
+							test.pass("<b><font color='green'>The premium is within the acceptable range</font></b>");
+							write("Pass", m, 49, rowNum);
+						} else {
+							test.fail("<b><font color='red'>The Premium does not match within the range</font></b>");
+							write("Fail", m, 49, rowNum);
+						}
+					} catch (NumberFormatException e) {
+						test.fail("<b><font color='red'>Error: Unable to parse premium values</font></b>");
+						output("Error parsing premium values: " + e.getMessage());
+						write("Error", m, 49, rowNum);
+					}
 		// Checking the file size
 		/*
 		 * String downloadPath = "C:/Users/dell/Downloads/Quote - undefined.pdf"; File

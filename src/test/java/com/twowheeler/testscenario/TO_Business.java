@@ -113,6 +113,7 @@ public class TO_Business extends TestBase {
 		output("Vehicle search button clicked successfully");
 		output("Vehicle Data retrieved from IRBM successfully");
 		test.log(Status.INFO, "Vehicle Data retrieved from IRBM successfully");
+		
 		// Coverage Details Tab
 		if (data.get("Coverage Type").equalsIgnoreCase("Comprehensive")) {
 			WebElement button = driver.findElement(By.xpath("//button[@id='cancel']"));
@@ -137,7 +138,7 @@ public class TO_Business extends TestBase {
 			//			System.out.println(updatedSI);
 			//			finalSI = vehSIInt + updatedSI;
 			//			System.out.println(finalSI);
-			String AgreedValue = read("PCRV", 6, rowNum);
+			String AgreedValue = read("PCTO", 6, rowNum);
 			output("The agreed value is: "+AgreedValue);
 			if (String.valueOf(AgreedValue).equals("0")) {
 				output("Test case not related to Agreed Value");
@@ -174,6 +175,21 @@ public class TO_Business extends TestBase {
 			click("TPCoverclick_XPATH");
 			//			click("TPNew_XPATH");
 			output("Type of Coverage clicked successfully");
+		}else if (data.get("Coverage Type").equalsIgnoreCase("Autobuddy")) {
+			WebElement button = driver.findElement(By.xpath("//button[@id='cancel']"));
+			js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].scrollIntoView(true);", button);
+			//Thread.sleep(5000);
+			click("AutbdtChkBox_XPATH");
+			output("Type of Coverage clicked successfully");
+			click("PlnDrClk_XPATH");
+		output("Plan Type Drop Down Clicked successfully");
+		Enter("PlnEnt_XPATH", data.get("Plan Type"));
+		output("Plan Type Given successfully");
+		//Thread.sleep(1000);
+		click("PlnSel_XPATH");
+		output("Plan Type clicked successfully");
+		//Thread.sleep(2000);
 		}
 		test.log(Status.INFO, "Coverage Details Given successfully");
 		//Thread.sleep(2000);
@@ -197,7 +213,8 @@ public class TO_Business extends TestBase {
 		WebElement cancelButton = driver.findElement(By.xpath("//button[@id='cancel']"));
 		js.executeScript("arguments[0].scrollIntoView(true);", cancelButton);
 		//Thread.sleep(10000);
-		click("VldOnrISMBtn_XPATH");
+		//click("VldOnrISMBtn_XPATH");
+		click("Validate_XPATH");
 		//Thread.sleep(10000);
 		output("Validate owner as per ISM button clicked successfully");
 		// NCD Transfer Details
@@ -240,7 +257,18 @@ public class TO_Business extends TestBase {
 		click("DrvExpDrpDwnSel_XPATH");
 		//Thread.sleep(5000);
 		output("Driving Experience selected successfully");
-		//Thread.sleep(15000);
+
+//		Thread.sleep(15000);
+//		click("HPToggle_XPATH");
+//		output("Toggle Button is selected successfully");
+//		Thread.sleep(15000);
+//		click("HPDropdown_XPATH");
+//		output("Dropdown is clicked successfully");
+//		Enter("HPSel_XPATH", data.get("HP"));
+//		output("Hire Purchase is selected successfully");
+//		Thread.sleep(15000);
+//		click("SelHP_XPATH");
+//		output("The Hire Purchase is selected successfully");
 				try{
 					lodclick("Yes_XPATH");
 					output("Yes button is selected successfully");
@@ -335,6 +363,11 @@ public class TO_Business extends TestBase {
 		Thread.sleep(25000);
 		click("IssuePolicy_XPATH");
 		output("Issue Policy Button Clicked successfully");
+		Thread.sleep(45000);
+		click("PPS_XPATH");
+		click("PPSCB_XPATH");
+		click("PPSSubmit_XPATH");
+		output("The Policy Schedule is downloaded successfully");
 //		Thread.sleep(35000);
 //		click("Download_XPATH");
 //		output("Download & e-mail Policy button clicked successfully");
