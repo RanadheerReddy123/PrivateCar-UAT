@@ -183,10 +183,10 @@ public class New_Business extends TestBaseNew {
 			output("Variant Name value is given successfully");
 			Enter("Seat_XPATH",data.get("SeatCpcty").replace(".0", ""));
 			output("Seating capacity value is given successfully");
-			WebElement button3 = driver.findElement(By.xpath("/html/body/dx-dijta-home-root/dx-vertical-layout/dx-layout/content/app-parent-qms/dx-compact-content/dx-layout-content/div/div/dx-qms-private-motor/div/dx-qms-nav-menu-layout/div[2]/div/div/app-private-motor-vehicle-details/form/div/dx-qms-nav-menu-content/div/div/div/div[1]/div[1]/dx-card/div/dx-icon-title/div/p"));
-			js = (JavascriptExecutor) driver;
-			js.executeScript("arguments[0].scrollIntoView(true);", button3);
-			click("SaveVehicle_XPATH");
+//			WebElement button3 = driver.findElement(By.xpath("/html/body/dx-dijta-home-root/dx-vertical-layout/dx-layout/content/app-parent-qms/dx-compact-content/dx-layout-content/div/div/dx-qms-private-motor/div/dx-qms-nav-menu-layout/div[2]/div/div/app-private-motor-vehicle-details/form/div/dx-qms-nav-menu-content/div/div/div/div[1]/div[1]/dx-card/div/dx-icon-title/div/p"));
+//			js = (JavascriptExecutor) driver;
+//			js.executeScript("arguments[0].scrollIntoView(true);", button3);
+			click("NewVecSve_XPATH");
 			output("Vehicle Details saved successfully");
 			test.log(Status.INFO, "Vehicle details is given successfully");
 			//Thread.sleep(5000);

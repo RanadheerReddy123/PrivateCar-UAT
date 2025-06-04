@@ -91,6 +91,8 @@ public class TO_Business extends TestBase {
 		output("Motor Tile clicked successfully");
 		Baseclick("TOVeh_XPATH");
 		output("TO Vehicle Selected Successfully");
+		Baseclick("TOPCMC_XPATH");
+		output("The TO for Private Car and Motorcycle");
 		Baseclick("nxtbtn_XPATH");
 		output("Next Button Clicked successfully");
 		test.log(Status.INFO, "Type of Motor Car Details Given successfully");
@@ -238,6 +240,7 @@ public class TO_Business extends TestBase {
 //							}
 		//click("SaveBtn_XPATH");
 		//click("DevSaveBtn_XPATH");
+		Thread.sleep(10000);
 		click("Save2_XPATH");
 		output("Save Button clicked successfully");
 		test.log(Status.INFO, "Vehicle Details Given successfully");
@@ -356,7 +359,7 @@ public class TO_Business extends TestBase {
 				click("Submit_XPATH");
 
 		// Policy Issuance
-		Thread.sleep(35000);
+		Thread.sleep(65000);
 		click("PolicyIssue_XPATH");
 		output("Proceed to Policy Issuance Button Clicked successfully");
 		// Issue Policy

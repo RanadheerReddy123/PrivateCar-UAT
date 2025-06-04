@@ -89,7 +89,7 @@ public class Reg_Business extends TestBase {
 		output("New Quote Button clicked successfully");
 		Baseclick("MotorTile_XPATH");
 		output("Motor Tile clicked successfully");
-		Baseclick("RegVechl_XPATH");
+		Baseclick("RegVechl2_XPATH");
 		output("Registered Vehicle Selected Successfully");
 		Baseclick("nxtbtn_XPATH");
 		output("Next Button Clicked successfully");
