@@ -143,9 +143,10 @@ public class New_Business extends TestBaseNew {
 			output("Place Of Use selected successfully");
 			test.log(Status.INFO, "Place of Use is selected successfully");
 			//Thread.sleep(5000);
-			WebElement button = driver.findElement(By.xpath("//button[@id='cancel']"));
-			js = (JavascriptExecutor) driver;
-			js.executeScript("arguments[0].scrollIntoView(true);", button);
+			click("VU2_XPATH");
+			Enter("VUS_XPATH",data.get("Vehicle Use"));
+			click("VUSelect_XPATH");
+			output("Vehicle Use selected successfully");
 			Enter("Engine_XPATH",data.get("Engine"));
 			output("Engine value is given successfully");
 			Enter("Chassis_XPATH",data.get("Chassis"));
@@ -157,12 +158,8 @@ public class New_Business extends TestBaseNew {
 			Enter("CatEntr_XPATH", data.get("Category"));
 			output("Category Entered successfully");
 			//Thread.sleep(2000);
-			click("Catsel_XPATH");
+			click("CatSel_XPATH");
 			output("Category selected successfully");
-			click("VU2_XPATH");
-			Enter("VUS_XPATH",data.get("Vehicle Use"));
-			click("VUSelect_XPATH");
-			output("Vehicle Use selected successfully");
 			//Thread.sleep(5000);
 			Enter("EngineCpcty_XPATH",data.get("Engine Capacity").replace(".0", ""));
 			output("Engine Capacity value is given successfully");
@@ -197,7 +194,7 @@ public class New_Business extends TestBaseNew {
 			Enter("BodyEntr_XPATH", data.get("Body Type"));
 			output("Body Entered successfully");
 			//Thread.sleep(2000);
-			click("Bodysel_XPATH");
+			click("BodySel_XPATH");
 			output("Body selected successfully");
 			Enter("Seat_XPATH",data.get("SeatCpcty").replace(".0", ""));
 			output("Seating capacity value is given successfully");

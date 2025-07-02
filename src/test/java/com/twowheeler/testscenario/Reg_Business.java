@@ -120,7 +120,7 @@ public class Reg_Business extends TestBase {
 		Enter("CatEntr_XPATH", data.get("Category"));
 		output("Category Entered successfully");
 		//Thread.sleep(2000);
-		click("Catsel_XPATH");
+		click("CatSel_XPATH");
 		output("Category selected successfully");
 		//Body
 				click("Body_XPATH");
@@ -129,8 +129,11 @@ public class Reg_Business extends TestBase {
 				Enter("BodyEntr_XPATH", data.get("Body Type"));
 				output("Body Entered successfully");
 				//Thread.sleep(2000);
-				click("Bodysel_XPATH");
+				click("BodySel_XPATH");
 				output("Body selected successfully");
+				click("NewVecSve_XPATH");
+				output("Vehicle Details saved successfully");
+				test.log(Status.INFO, "Vehicle details is given successfully");
 		// Coverage Details Tab
 		if (data.get("Coverage Type").equalsIgnoreCase("Comprehensive")) {
 			WebElement button = driver.findElement(By.xpath("//button[@id='cancel']"));
