@@ -113,6 +113,24 @@ public class Reg_Business extends TestBase {
 		output("Vehicle search button clicked successfully");
 		output("Vehicle Data retrieved from IRBM successfully");
 		test.log(Status.INFO, "Vehicle Data retrieved from IRBM successfully");
+		//Category
+		click("Cat_XPATH");
+		output("Category Drop Down Clicked successfully");
+		//Thread.sleep(1500);
+		Enter("CatEntr_XPATH", data.get("Category"));
+		output("Category Entered successfully");
+		//Thread.sleep(2000);
+		click("Catsel_XPATH");
+		output("Category selected successfully");
+		//Body
+				click("Body_XPATH");
+				output("Body Drop Down Clicked successfully");
+				//Thread.sleep(1500);
+				Enter("BodyEntr_XPATH", data.get("Body Type"));
+				output("Body Entered successfully");
+				//Thread.sleep(2000);
+				click("Bodysel_XPATH");
+				output("Body selected successfully");
 		// Coverage Details Tab
 		if (data.get("Coverage Type").equalsIgnoreCase("Comprehensive")) {
 			WebElement button = driver.findElement(By.xpath("//button[@id='cancel']"));
@@ -357,7 +375,7 @@ public class Reg_Business extends TestBase {
 				click("Submit_XPATH");
 
 		// Policy Issuance
-		Thread.sleep(35000);
+		Thread.sleep(45000);
 		click("PolicyIssue_XPATH");
 		output("Proceed to Policy Issuance Button Clicked successfully");
 		// Issue Policy
@@ -366,7 +384,7 @@ public class Reg_Business extends TestBase {
 		output("Issue Policy Button Clicked successfully");
 		Thread.sleep(45000);
 		click("PPS_XPATH");
-		click("PPSCB_XPATH");
+		//click("PPSCB_XPATH");
 		click("PPSSubmit_XPATH");
 		output("The Policy Schedule is downloaded successfully");
 //		Thread.sleep(35000);

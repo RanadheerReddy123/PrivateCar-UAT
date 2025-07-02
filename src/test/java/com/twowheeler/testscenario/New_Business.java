@@ -150,7 +150,16 @@ public class New_Business extends TestBaseNew {
 			output("Engine value is given successfully");
 			Enter("Chassis_XPATH",data.get("Chassis"));
 			output("Chassis value is given successfully");
-			click("VU_XPATH");
+			//Category
+			click("Cat_XPATH");
+			output("Category Drop Down Clicked successfully");
+			//Thread.sleep(1500);
+			Enter("CatEntr_XPATH", data.get("Category"));
+			output("Category Entered successfully");
+			//Thread.sleep(2000);
+			click("Catsel_XPATH");
+			output("Category selected successfully");
+			click("VU2_XPATH");
 			Enter("VUS_XPATH",data.get("Vehicle Use"));
 			click("VUSelect_XPATH");
 			output("Vehicle Use selected successfully");
@@ -181,6 +190,15 @@ public class New_Business extends TestBaseNew {
 			output("Variant value is given successfully");
 			Enter("VariantNameS_XPATH",data.get("Variant2"));
 			output("Variant Name value is given successfully");
+			//Body
+			click("Body_XPATH");
+			output("Body Drop Down Clicked successfully");
+			//Thread.sleep(1500);
+			Enter("BodyEntr_XPATH", data.get("Body Type"));
+			output("Body Entered successfully");
+			//Thread.sleep(2000);
+			click("Bodysel_XPATH");
+			output("Body selected successfully");
 			Enter("Seat_XPATH",data.get("SeatCpcty").replace(".0", ""));
 			output("Seating capacity value is given successfully");
 //			WebElement button3 = driver.findElement(By.xpath("/html/body/dx-dijta-home-root/dx-vertical-layout/dx-layout/content/app-parent-qms/dx-compact-content/dx-layout-content/div/div/dx-qms-private-motor/div/dx-qms-nav-menu-layout/div[2]/div/div/app-private-motor-vehicle-details/form/div/dx-qms-nav-menu-content/div/div/div/div[1]/div[1]/dx-card/div/dx-icon-title/div/p"));
@@ -362,16 +380,17 @@ public class New_Business extends TestBaseNew {
 			//click("STPM_XPATH");
 			//output("The Submit for TPM staff approval is clicked successfully");
 			Thread.sleep(25000);
-			click("ProceedHC2_XPATH");
+			//click("ProceedHC2_XPATH");
+			click("PolicyIssue_XPATH");
 			output("The Proceed policy cover is clicked successfully");
 			Thread.sleep(25000);
 			click("IssueCover_XPATH");
 			output("The Issue Cover is clicked successfully");
 			//Thread.sleep(45000);
-//			click("PPS_XPATH");
-//			click("PPSCB_XPATH");
-//			click("PPSSubmit_XPATH");
-//			output("The Policy Schedule is downloaded successfully");
+			click("PPS_XPATH");
+			//click("PPSCB_XPATH");
+			click("PPSSubmit_XPATH");
+			output("The Policy Schedule is downloaded successfully");
 			// Print
 						Thread.sleep(25000);
 						WebElement QuoteNum = Webprint("QuoteNumber_XPATH");
