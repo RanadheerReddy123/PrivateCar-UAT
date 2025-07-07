@@ -260,7 +260,7 @@ public class Reg_Business extends TestBase {
 		//click("SaveBtn_XPATH");
 		//click("DevSaveBtn_XPATH");
 		//click("NewSave_XPATH");
-		click("Save2_XPATH");
+		click("SaveBtn2_XPATH");
 		output("Save Button clicked successfully");
 		test.log(Status.INFO, "Vehicle Details Given successfully");
 
@@ -376,6 +376,7 @@ public class Reg_Business extends TestBase {
 				click("GenQ_XPATH");
 				//click("DownQ_XPATH");
 				click("Submit_XPATH");
+				output("The Quote Letter is generated successfully");
 
 		// Policy Issuance
 		Thread.sleep(45000);

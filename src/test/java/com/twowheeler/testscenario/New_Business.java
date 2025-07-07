@@ -258,7 +258,7 @@ public class New_Business extends TestBaseNew {
 			//		click("VldOnrISMBtn_XPATH");
 			//		Thread.sleep(10000);
 			//		output("Validate owner as per ISM button clicked successfullsy");
-			click("Save2_XPATH");
+			click("SaveBtn2_XPATH");
 			output("Save Quote Button clicked successfully");
 			test.log(Status.INFO, "Save Quote is selected successfully");
 
@@ -378,7 +378,8 @@ public class New_Business extends TestBaseNew {
 			//output("The Submit for TPM staff approval is clicked successfully");
 			Thread.sleep(25000);
 			//click("ProceedHC2_XPATH");
-			click("PolicyIssue_XPATH");
+			//click("PolicyIssue_XPATH");
+			click("Proceed_XPATH");
 			output("The Proceed policy cover is clicked successfully");
 			Thread.sleep(25000);
 			click("IssueCover_XPATH");
