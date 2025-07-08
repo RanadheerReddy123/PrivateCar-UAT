@@ -94,7 +94,7 @@ public class New_Business extends TestBaseNew {
 			output("Motor Tile clicked successfully");
 			//Baseclick("RegVechl_XPATH");
 			//output("Registered Vehicle Selected Successfully");
-			Baseclick("NewMotor_XPATH");
+			Baseclick("NewMotor2_XPATH");
 			output("New Vehicle Selected Succesfully");
 			Baseclick("nxtbtn_XPATH");
 			output("Next Button Clicked successfully");

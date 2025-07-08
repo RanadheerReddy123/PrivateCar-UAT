@@ -3,6 +3,6 @@
 <suite name="Parallel Suite Runner">
     <suite-files>
         <suite-file path="regveh.xml"/>
-        <suite-file path="regvehorg.xml"/>
+        <suite-file path="newveh.xml"/>
     </suite-files>
 </suite>
