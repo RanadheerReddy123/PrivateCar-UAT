@@ -31,13 +31,14 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.twowheeler.base.TestBase;
+import com.twowheeler.base.TestBaseTO;
 import com.twowheeler.utilities.MonitoringMail;
 import com.twowheeler.utilities.TestConfig;
 import com.twowheeler.utilities.TestUtil;
 
 import Utilities_UAT_ScreenRecord.Motor_PersonBP_ScreenRecord;
 
-public class TO_Business extends TestBase {
+public class TO_Business extends TestBaseTO {
 
 	public ExtentSparkReporter htmlReporter;
 	public ExtentReports extent;
@@ -55,8 +56,8 @@ public class TO_Business extends TestBase {
 		htmlReporter = new ExtentSparkReporter("./reports/PCTO-UAT-Reports.html");
 
 		htmlReporter.config().setEncoding("utf-8");
-		htmlReporter.config().setDocumentTitle("Private Car SIT Automation Reports");
-		htmlReporter.config().setReportName("Private Car SIT Automation Test Results");
+		htmlReporter.config().setDocumentTitle("Private Car UAT Automation Reports");
+		htmlReporter.config().setReportName("Private Car UAT Automation Test Results");
 		htmlReporter.loadXMLConfig(new File(".\\ExtentReportXMLs\\CustomeHeader.xml"));
 		htmlReporter.config().setTheme(Theme.STANDARD);
 
