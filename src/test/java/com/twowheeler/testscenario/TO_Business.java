@@ -386,10 +386,12 @@ public class TO_Business extends TestBaseTO {
 		output("Proceed to Policy Issuance Button Clicked successfully");
 		// Issue Policy
 		Thread.sleep(25000);
-		click("IssuePolicy_XPATH");
+		//click("IssuePolicy_XPATH");
+		click("IssuePolicy2_XPATH");
 		output("Issue Policy Button Clicked successfully");
 		Thread.sleep(45000);
-		click("PPS_XPATH");
+		//click("PPS_XPATH");
+		click("PPS2_XPATH");
 		//click("PPSCB_XPATH");
 		click("PPSSubmit_XPATH");
 		output("The Policy Schedule is downloaded successfully");
