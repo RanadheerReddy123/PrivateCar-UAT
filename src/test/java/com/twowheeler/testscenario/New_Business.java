@@ -382,10 +382,12 @@ public class New_Business extends TestBaseNew {
 			click("Proceed_XPATH");
 			output("The Proceed policy cover is clicked successfully");
 			Thread.sleep(25000);
-			click("IssueCover_XPATH");
+			//click("IssueCover_XPATH");
+			click("IssueCover2_XPATH");
 			output("The Issue Cover is clicked successfully");
 			//Thread.sleep(45000);
-			click("PPS_XPATH");
+			//click("PPS_XPATH");
+			click("PPS2_XPATH");
 			//click("PPSCB_XPATH");
 			click("PPSSubmit_XPATH");
 			output("The Policy Schedule is downloaded successfully");
